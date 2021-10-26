@@ -1,3 +1,48 @@
+@font-face {
+  font-family: 'Economica';
+  src: local('Economica'), url(./fonts/Economica-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Economica';
+  font-style: italic;
+  src: local('Economica'), url(./fonts/Economica-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Kalam';
+  src: local('Kalam'), url(./fonts/Kalam-Bold.ttf) format('truetype');
+}
+
 body {
   margin: 0;
+  background-color: #2a2e33;
+  font-family: 'Economica', sans-serif;
+  color: white;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: top center;
+}
+
+h1 {
+  font-family: 'Kalam', cursive;
+  font-size: 20pt;
+}
+
+@media screen and (min-width: 701px) {
+  body {
+    background-image: url(./assets/Background-PC.png);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-image: url(./assets/Background-Mobile.png);
+    background-size: 320px;
+  }
+
+  h1 {
+    font-size: 12pt;
+  }
 }
