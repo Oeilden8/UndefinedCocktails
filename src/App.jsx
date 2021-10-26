@@ -1,5 +1,7 @@
-import RemoveMe from './components/RemoveMe';
-import "./App.css";
+// import RemoveMe from './components/RemoveMe';
+import React from 'react';
+// import ReactDOM from 'react-dom';
+import './App.css';
 
 function App() {
   return (
