@@ -1,14 +1,25 @@
 // import RemoveMe from './components/RemoveMe';
-import React from 'react';
 // import ReactDOM from 'react-dom';
+import React from 'react';
+// import { BrowserRouter as Switch, Router, Route, Link } from 'react-router-dom';
 import './App.css';
+import HomeSearch from './components/HomeSearch';
 
 function App() {
   return (
+    // <Router>
+    //   <Switch>
+    //     <Route exact path="/">
+    //       <App />
+    //     </Route>
+    //     <Route path="/Bar">
+    //       <NomComposantBar />
+    //     </Route>
+    //   </Switch>
     <div className="App">
-      <h1>Je suis un titre</h1>
-      <p>Je suis du texte</p>
+      <HomeSearch />
     </div>
+    // </Router>
   );
 }
 
