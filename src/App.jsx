@@ -4,10 +4,15 @@ import React from 'react';
 // import { BrowserRouter as Switch, Router, Route, Link } from 'react-router-dom';
 import './App.css';
 import HomeSearch from './components/HomeSearch';
+// import BurgerMenu from './components/BurgerMenu';
 
 function App() {
   return (
     // <Router>
+    <div className="App">
+      {/* <BurgerMenu /> */}
+      <HomeSearch />
+    </div>
     //   <Switch>
     //     <Route exact path="/">
     //       <App />
@@ -16,9 +21,6 @@ function App() {
     //       <NomComposantBar />
     //     </Route>
     //   </Switch>
-    <div className="App">
-      <HomeSearch />
-    </div>
     // </Router>
   );
 }
