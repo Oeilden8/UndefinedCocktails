@@ -3,8 +3,8 @@
 import React from 'react';
 // import { BrowserRouter as Switch, Router, Route, Link } from 'react-router-dom';
 import './App.css';
-// import HomeSearch from './components/HomeSearch';
 import RandomCocktail from './components/RandomCocktail';
+import HomeSearch from './components/HomeSearch';
 // import BurgerMenu from './components/BurgerMenu';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     // <Router>
     <div className="App">
       {/* <BurgerMenu /> */}
-      {/* <HomeSearch /> */}
+      <HomeSearch />
       <RandomCocktail />
     </div>
     //   <Switch>
