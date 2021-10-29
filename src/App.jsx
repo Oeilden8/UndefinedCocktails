@@ -2,12 +2,12 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
 import './App.css';
+import BurgerMenu from './components/BurgerMenu';
 
 function App() {
   return (
     <div className="App">
-      <h1>Je suis un titre</h1>
-      <p>Je suis du texte</p>
+      <BurgerMenu />
     </div>
   );
 }
