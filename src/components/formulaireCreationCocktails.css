@@ -1,0 +1,48 @@
+/* Css du formulaire de creation du cocktails */
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+input {
+  margin: 6px;
+  border-radius: 7px;
+  width: 30%;
+  font-size: 18px;
+  border-color: orange;
+  font-family: 'Economica', Arial, Helvetica, sans-serif;
+}
+
+label {
+  font-size: 18px;
+}
+
+#preparation {
+  height: 200px;
+  width: 30%;
+  border-color: orange;
+  border-radius: 7px;
+  margin-right: 8px;
+  font-size: 18px;
+  font-family: 'Economica', Arial, Helvetica, sans-serif;
+}
+
+#name {
+  margin-right: 65px;
+}
+
+.submitCocktails {
+  border-radius: 1em;
+  width: 100px;
+  background-color: orangered;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-family: 'Economica', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
