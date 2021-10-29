@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './CocktailCard.css';
 import axios from 'axios';
 // import cocktailImg from '../assets/cocktail-random.jpg';
 
 export default function RandomCocktail() {
-  const [random, setRandom] = React.useState([]);
-  React.useEffect(() => {
+  const [random, setRandom] = useState([]);
+  useEffect(() => {
     axios
-      .get('www.thecocktaildb.com/api/json/v1/1/random.php')
-      .then((resp) => setRandom(resp.data))
+      .get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+      .then((resp) => {
+        console.log(resp.data.drinks);
+        return setRandom([resp.data.drinks[0]]);
+      })
       .catch((error) => console.log(error));
   }, []);
 
