@@ -3,6 +3,7 @@
 import React from 'react';
 // import { BrowserRouter as Switch, Router, Route, Link } from 'react-router-dom';
 import './App.css';
+import RandomCocktail from './components/RandomCocktail';
 import HomeSearch from './components/HomeSearch';
 // import BurgerMenu from './components/BurgerMenu';
 
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       {/* <BurgerMenu /> */}
       <HomeSearch />
+      <RandomCocktail />
     </div>
     //   <Switch>
     //     <Route exact path="/">
