@@ -5,13 +5,13 @@ import React from 'react';
 import './App.css';
 import RandomCocktail from './components/RandomCocktail';
 import HomeSearch from './components/HomeSearch';
-// import BurgerMenu from './components/BurgerMenu';
+import BurgerMenu from './components/BurgerMenu';
 
 function App() {
   return (
     // <Router>
     <div className="App">
-      {/* <BurgerMenu /> */}
+      <BurgerMenu />
       <HomeSearch />
       <RandomCocktail />
     </div>
