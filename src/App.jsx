@@ -7,7 +7,6 @@ import FormulaireCreationCocktails from './components/FormulaireCreationCocktail
 function App() {
   return (
     <div className="App">
-      <h1>What about offering your own cocktail?</h1>
       <FormulaireCreationCocktails />
     </div>
   );
