@@ -3,16 +3,22 @@ import './BurgerMenu.css';
 
 const BurgerMenu = () => {
   return (
-    <header>
-      <button type="button">Burger Menu</button>
-      <h1>Undefined Cocktails</h1>
-      <ul className="menu">
-        <li>Home</li>
-        <li>Cocktails</li>
-        <li>Trouver un Bar</li>
-        <li>Création</li>
-        <li>Contact</li>
-      </ul>
+    <header id="home">
+      <button type="button" className="burger__menu">
+        <span />
+        <span />
+        <span />
+        <ul className="nav">
+          <li>Home</li>
+          <li>Cocktails</li>
+          <li>Trouver un Bar</li>
+          <li>Création</li>
+          <li>Contact</li>
+        </ul>
+      </button>
+      <div className="title">
+        <h1>Undefined Cocktails</h1>
+      </div>
     </header>
   );
 };
