@@ -29,12 +29,26 @@ export default function RandomCocktail() {
 
           <ul className="ingredients">
             <li>
-              <h2>{rand.strDrink}</h2>
+              <h2>{rand.strDrink.toUpperCase()}</h2>
             </li>
-            <li>{rand.strAlcoholic}</li>
-            <li>{rand.strIngredient1}</li>
-            <li>{rand.strIngredient2}</li>
-            <li>{rand.strIngredient3}</li>
+            <li>
+              {rand.strIngredient1} {rand.strMeasure1}
+            </li>
+            <li>
+              {rand.strIngredient2} {rand.strMeasure2}
+            </li>
+            <li>
+              {rand.strIngredient3} {rand.strMeasure3}
+            </li>
+            <li>
+              {rand.strIngredient4} {rand.strMeasure4}
+            </li>
+            <li>
+              {rand.strIngredient5} {rand.strMeasure5}
+            </li>
+            <li>
+              {rand.strIngredient6} {rand.strMeasure6}
+            </li>
           </ul>
 
           <h2>MIX IT</h2>

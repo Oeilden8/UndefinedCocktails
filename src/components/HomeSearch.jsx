@@ -19,7 +19,7 @@ export default function HomeSearch() {
         type="text"
         className="search-bar"
         value={searchValue}
-        placeholder="  &#x1F50E;   Rechercher par nom, ingrédient..."
+        placeholder="  &#x1F50E;   Search by name, ingrédient..."
         onChange={inputValue}
         onKeyUp={handleEnter}
       />
