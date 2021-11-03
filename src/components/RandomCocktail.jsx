@@ -12,6 +12,7 @@ export default function RandomCocktail() {
         console.log(resp.data.drinks);
         return setRandom([resp.data.drinks[0]]);
       })
+      // renvoie la réponse dans random. La réponse est un tableau de drinks, d'ou le [0].
       .catch((error) => console.log(error));
   }, []);
 
