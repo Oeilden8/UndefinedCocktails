@@ -4,9 +4,8 @@ import './Home.css';
 export default function HomeSearch(props) {
   const { searchValue, handleValue, handleEnter } = props;
 
-  // passe le state recupéré dans la barre de recherche au parent SearchResult
+  // passe le state recupéré dans la barre de recherche au parent App
   // passe l'évenement qui écoute la touche entrée ds l'input au composant parent App
-  // const [searchValue, setSearchValue] = React.useState;
 
   return (
     <div className="search">
