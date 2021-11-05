@@ -10,26 +10,27 @@ export default function SearchResults({ searchValue }) {
         `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${searchValue}`
       )
       .then((resp) => {
+        // si l'api envoie une réponse, stocke dans result
         if (resp.data.drinks) {
           const randomDrinksResult = [];
           const allDrinks = resp.data.drinks;
-          for (let i = 0; i < 12; i++) {
-            const randomDrink =
-              allDrinks[Math.floor(Math.random() * allDrinks.length)];
+          for (let i = 0; allDrinks.length > 0 && i < 12; i++) {
+            const randomDrink = allDrinks.splice(
+              Math.floor(Math.random() * allDrinks.length),
+              1
+            )[0];
             randomDrinksResult.push(randomDrink);
-            // allDrinks.splice(0, Math.floor(Math.random() * allDrinks.length));
+            // coupe un drink random de allDrinks et le stocke dans randomDrink, [0] pour renvoyer seulement des objets à pousser dans le tableau results
+            // 1 a la fin du splice pour dire "supprimer 1 élément"
           }
           console.log(randomDrinksResult);
           setResult(randomDrinksResult);
         } else {
           alert('Please enter a valid ingredient');
         }
-        // si l'api envoie une réponse, stocke dans result
         // else envoyer un message d'erreur à user
-        // dans le if (=si on a bien un resultat) faire un tableau vide randomDrinksResult, une boucle qui splice un resultat et le push dans randomDrinksResult 12  (mobi?)
-
-        // return setResult(resp.data.drinks[Math.floor(Math.random() * 12)]);
       })
+
       .catch((error) => console.log(error));
   }, [searchValue]);
   // searchValue est la query demandée à l'api
