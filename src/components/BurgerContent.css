@@ -1,0 +1,18 @@
+ul {
+  list-style: none;
+  padding: 15px 5px 5px 15px;
+  display: flex;
+  flex-flow: column;
+  background-color: #2a2e33;
+  color: orangered;
+  border: solid;
+  border-radius: 15px;
+  position: absolute;
+  width: 20vw;
+}
+
+li {
+  margin-bottom: 25px;
+  color: white;
+  text-align: left;
+}
