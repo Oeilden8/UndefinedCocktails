@@ -1,7 +1,7 @@
 // import RemoveMe from './components/RemoveMe';
 // import ReactDOM from 'react-dom';
 import React from 'react';
-// import { BrowserRouter as Switch, Router, Route, Link } from 'react-router-dom';
+// import { BrowserRouter as Routes, Router, Route } from 'react-router-dom';
 import './App.css';
 import HomeSearch from './components/HomeSearch';
 import BurgerMenu from './components/BurgerMenu';
@@ -42,17 +42,18 @@ function App() {
       ) : (
         <RandomCocktail />
       )}
+      <RandomCocktail />
     </div>
-    // si searchValue est true (elle existe) et enter est true mount SearchResulst
+    //   si searchValue est true (elle existe) et enter est true mount SearchResulst
     // else mount
-    //   <Switch>
+    //   <Routes>
     //     <Route exact path="/">
     //       <App />
     //     </Route>
     //     <Route path="/Bar">
     //       <NomComposantBar />
     //     </Route>
-    //   </Switch>
+    //   </Routes>
     // </Router>
   );
 }

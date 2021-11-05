@@ -1,0 +1,203 @@
+.search-container {
+  height: 650px;
+  width: 100vw;
+}
+
+.grid-search {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-image {
+  width: 160px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hover:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+h4 {
+  font-size: 18px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.grid-search > * {
+  background-color: #2a2e33;
+}
+
+#0 {
+  grid-area: 1/1/2/2;
+}
+
+#1 {
+  grid-area: 2/1/3/2;
+}
+
+#2 {
+  grid-area: 3/1/4/2;
+}
+
+#3 {
+  grid-area: 4/1/5/2;
+}
+
+#4 {
+  grid-area: 5/1/6/2;
+}
+
+#5 {
+  grid-area: 6/1/7/2;
+}
+
+#6 {
+  grid-area: 2/2/3/3;
+}
+
+#7 {
+  grid-area: 3/2/4/3;
+}
+
+#8 {
+  grid-area: 4/2/5/3;
+}
+
+#9 {
+  grid-area: 5/2/6/3;
+}
+
+#10 {
+  grid-area: 6/2/7/3;
+}
+
+#11 {
+  grid-area: 6/2/7/3;
+}
+
+.transp {
+  grid-area: 3/1/4/7;
+  background-color: transparent;
+}
+
+.search-button {
+  grid-area: 3/3/4/5;
+  border: transparent;
+  color: white;
+  font-family: 'Economica', sans-serif;
+  font-size: 20pt;
+  background-image: url(../assets/button-citron.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 8vw;
+  text-align: left;
+}
+
+.grid-search-mobi {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .result-image {
+    width: 100px;
+    height: 150px;
+  }
+
+  .search-button {
+    grid-area: 3/2/4/6;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .result-image {
+    width: 80px;
+    height: 120px;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .grid-search {
+    display: none;
+  }
+
+  .search-container {
+    height: 840px;
+    background-color: #2a2e33;
+  }
+
+  .grid-search-mobi {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .result-image {
+    width: 140px;
+    height: 200px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  #0 {
+    grid-area: 1/1/2/2;
+  }
+
+  #1 {
+    grid-area: 2/1/3/2;
+  }
+
+  #2 {
+    grid-area: 1/2/2/3;
+  }
+
+  #3 {
+    grid-area: 2/2/3/3;
+  }
+
+  #4 {
+    grid-area: 1/3/2/4;
+  }
+
+  #5 {
+    grid-area: 2/3/3/4;
+  }
+
+  .search-button {
+    grid-area: 4/1/5/3;
+    border: transparent;
+    color: white;
+    font-family: 'Economica', sans-serif;
+    font-size: 15pt;
+    background-image: url(../assets/button-citron.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    background-color: #2a2e33;
+  }
+}
