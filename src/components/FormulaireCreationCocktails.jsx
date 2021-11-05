@@ -57,7 +57,7 @@ function FormulaireCreationCocktails() {
           />
         </label>
         {/* Button Envoyé */}
-        <button type="button" onClick={display} className="submitCocktails">
+        <button type="submit" onClick={display} className="submitCocktails">
           suggest
         </button>
       </form>
