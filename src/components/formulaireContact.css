@@ -1,4 +1,18 @@
 /* ------ Css du Formulaire de Contact ------ */
+hr {
+  width: 50%;
+  margin-bottom: 40px;
+  height: 1px;
+  background-color: #fa5e3e;
+  border-color: #fa5e3e;
+}
+
+@media only screen and (max-width: 770px) {
+  hr {
+    margin-top: 80px;
+  }
+}
+
 .textContact {
   margin-bottom: 20px;
   padding: 0;
