@@ -67,3 +67,17 @@ input {
 .submitCocktails:hover {
   background-color: #f0743f;
 }
+
+/* ---------- Partie Responsive du Formulaire ---------- */
+
+@media only screen and (max-width: 770px) {
+  form {
+    width: 280px;
+    height: 600px;
+    margin-left: 15%;
+  }
+
+  .submitCocktails {
+    margin-left: 30%;
+  }
+}
