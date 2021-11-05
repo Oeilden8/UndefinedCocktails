@@ -10,7 +10,6 @@ import RandomCocktail from './components/RandomCocktail';
 import HomeSearch from './components/HomeSearch';
 import BurgerMenu from './components/BurgerMenu';
 
-
 function App() {
   return (
     // <Router>
@@ -18,7 +17,7 @@ function App() {
       <BurgerMenu />
       <HomeSearch />
       <RandomCocktail />
-    <FormulaireCreationCocktails />
+      <FormulaireCreationCocktails />
       <FormulaireContact />
     </div>
     //   <Switch>
