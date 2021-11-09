@@ -8,13 +8,33 @@ function FormulaireCreationCocktails() {
   const [name, setName] = React.useState('');
   const [ingredient, setIngredient] = React.useState('');
   const [preparation, setPreparation] = React.useState('');
-
+  const cocktailName = [];
+  const cocktailIngredient = [];
+  const cocktailPreparation = [];
   // Function qui permet d'afficher dans la console ce qui il y a d'écrit dans les input
   const display = (e) => {
     e.preventDefault();
-    console.log(`name of the cocktails:${name}`);
-    console.log(`Les ingrédients:${ingredient}`);
-    console.log(`La préparation:${preparation}`);
+    // Les 3 console.log suivant servent a afficher ce qu'il y a dans les inputs dans la console
+    // console.log(`name of the cocktails:${name}`);
+    // console.log(`Les ingrédients:${ingredient}`);
+    // console.log(`La préparation:${preparation}`);
+
+    // Les valeurs des input sont enregistré dans le tableau correspondant.
+    cocktailName.push(`${name}`);
+    cocktailIngredient.push(`${ingredient}`);
+    cocktailPreparation.push(`${preparation}`);
+
+    // les console.log des tableaux
+    console.log(`Le nom de votre cocktail : ${cocktailName}`);
+    console.log(`Les ingrédients de votre cocktail : ${cocktailIngredient}`);
+    console.log(`La préparation de votre cocktail : ${cocktailPreparation}`);
+
+    // sert a afficher les tableaux dans la page
+    // document.getElementById('cocktailNom').innerHTML = cocktailName.join();
+    // document.getElementById('cocktailIng').innerHTML =
+    //   cocktailIngredient.join();
+    // document.getElementById('cocktailPrepa').innerHTML =
+    //   cocktailPreparation.join();
     setName(' ');
     setIngredient(' ');
     setPreparation(' ');
@@ -60,6 +80,13 @@ function FormulaireCreationCocktails() {
         <button type="button" onClick={display} className="submitCocktails">
           suggest
         </button>
+        {/* Partie qui affiche les cocktails du formulaire */}
+        {/* <p>Mes cocktails Personnalisé</p>
+        <div id="cocktailTabs">
+          <p id="cocktailNom">Name</p>
+          <p id="cocktailIng">Ingredient</p>
+          <p id="cocktailPrepa">Preparation</p>
+        </div> */}
       </form>
     </div>
   );
