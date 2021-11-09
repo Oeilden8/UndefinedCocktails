@@ -41,7 +41,7 @@ function App() {
         <SearchResults searchValue={searchValue} />
       ) : (
         <RandomCocktail />
-        // si searchValue est true (elle existe) et enter est true mount SearchResult
+        // si searchValue est true (elle existe) et enter est true mount SearchResulst
         // else mount RandomCocktail
       )}
       <FormulaireCreationCocktails />
