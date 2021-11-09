@@ -2,10 +2,13 @@
 // import ReactDOM from 'react-dom';
 import React from 'react';
 import './App.css';
-import HomeSearch from './components/HomeSearch';
+import FormulaireContact from './components/FormulaireContact';
+import FormulaireCreationCocktails from './components/FormulaireCreationCocktails';
 import BurgerMenu from './components/BurgerMenu';
+import HomeSearch from './components/HomeSearch';
 import RandomCocktail from './components/RandomCocktail';
 import SearchResults from './components/SearchResults';
+
 
 function App() {
   const [searchValue, setSearchValue] = React.useState('');
@@ -40,9 +43,12 @@ function App() {
       ) : (
         <RandomCocktail />
       )}
+          // si searchValue est true (elle existe) et enter est true mount SearchResulst
+          // else mount RandomCocktail
+      <FormulaireCreationCocktails />
+      <FormulaireContact />
     </div>
-    //   si searchValue est true (elle existe) et enter est true mount SearchResulst
-    // else mount RandomCocktail
+
   );
 }
 
