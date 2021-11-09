@@ -4,6 +4,12 @@ import axios from 'axios';
 
 export default function SearchResults({ searchValue }) {
   const [result, setResult] = React.useState([]);
+  const [refresh, setRefresh] = React.useState(true);
+  // state changé par le bouton qui permet de re-render le useEffect
+  const handleClick = () => {
+    setRefresh(!refresh);
+  };
+
   React.useEffect(() => {
     axios
       .get(
@@ -32,8 +38,9 @@ export default function SearchResults({ searchValue }) {
       })
 
       .catch((error) => console.log(error));
-  }, [searchValue]);
-  // searchValue est la query demandée à l'api
+  }, [searchValue, refresh]);
+  // valeurs qui si modifiées re-render le useEffect
+  // searchValue est la query demandée à l'api, refresh le state bidon qui sert juste a controler le re-render
 
   return (
     <div className="search-container">
@@ -49,7 +56,7 @@ export default function SearchResults({ searchValue }) {
             <h4>{search.strDrink.toUpperCase()}</h4>
           </section>
         ))}
-        <button type="button" className="search-button">
+        <button type="button" className="search-button" onClick={handleClick}>
           Click here if you want more results
         </button>
       </div>
@@ -64,9 +71,6 @@ export default function SearchResults({ searchValue }) {
             <h4>{search.strDrink.toUpperCase()}</h4>
           </section>
         ))}
-        <button type="button" className="search-button">
-          Click here if you want more results
-        </button>
       </div>
     </div>
   );
