@@ -1,6 +1,7 @@
 import React from 'react';
 import './SearchResults.css';
 import axios from 'axios';
+import CocktailCard from './CocktailCard';
 
 export default function SearchResults({ searchValue }) {
   const [result, setResult] = React.useState([]);
@@ -48,10 +49,12 @@ export default function SearchResults({ searchValue }) {
       <div className="grid-search">
         {result.map((search, index) => (
           <section className="hover" id={index.toString()}>
+            <CocktailCard idDrink={search.idDrink} />
             <img
               src={search.strDrinkThumb}
               alt="cocktail"
               className="result-image"
+              onClick={<CocktailCard />}
             />
             <h4>{search.strDrink.toUpperCase()}</h4>
           </section>
@@ -71,6 +74,9 @@ export default function SearchResults({ searchValue }) {
             <h4>{search.strDrink.toUpperCase()}</h4>
           </section>
         ))}
+        <button type="button" className="search-button" onClick={handleClick}>
+          Click here if you want more results
+        </button>
       </div>
     </div>
   );
