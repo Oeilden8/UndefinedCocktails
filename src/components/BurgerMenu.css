@@ -5,6 +5,8 @@ header {
   height: 60px;
   background: linear-gradient(to right, #fff200, #f37029, #e93e3a);
   color: white;
+  position: sticky;
+  top: 0;
 }
 
 .title {
@@ -66,4 +68,9 @@ h1 {
     transform: translateX(-40px);
     opacity: 0;
   }
+}
+
+.section {
+  color: white;
+  text-decoration: none;
 }
