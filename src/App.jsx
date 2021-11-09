@@ -1,34 +1,52 @@
 // import RemoveMe from './components/RemoveMe';
 // import ReactDOM from 'react-dom';
 import React from 'react';
-// import { BrowserRouter as Switch, Router, Route, Link } from 'react-router-dom';
 import './App.css';
-
 import FormulaireContact from './components/FormulaireContact';
 import FormulaireCreationCocktails from './components/FormulaireCreationCocktails';
-import RandomCocktail from './components/RandomCocktail';
-import HomeSearch from './components/HomeSearch';
 import BurgerMenu from './components/BurgerMenu';
+import HomeSearch from './components/HomeSearch';
+import RandomCocktail from './components/RandomCocktail';
+import SearchResults from './components/SearchResults';
 
 function App() {
+  const [searchValue, setSearchValue] = React.useState('');
+  // state de la barre de recherche de l'enfant HomeSearch
+  const [enter, setEnter] = React.useState(false);
+  // state lançant la recherche via enter (enter est pressé = true, par default false)
+  const handleValue = (e) => {
+    setSearchValue(e.target.value);
+    setEnter(false);
+    // (onChange ds l'input de l'enfant Homesearch) on remplit searchValue quand l'input change
+    // à chaque fois qu'on ecrit dans l'input enter=false
+  };
+  const handleEnter = (e) => {
+    if (e.key === 'Enter') {
+      setEnter(true);
+      console.log(searchValue);
+      // si on appuie sur enter, enter=true et la recherche est lancée, le composant SearchResults mount, l'api est appelée
+      // else le composant ne se monte pas
+    }
+  };
+
   return (
-    // <Router>
     <div className="App">
       <BurgerMenu />
-      <HomeSearch />
-      <RandomCocktail />
+      <HomeSearch
+        handleValue={handleValue}
+        searchValue={searchValue}
+        handleEnter={handleEnter}
+      />
+      {searchValue && enter ? (
+        <SearchResults searchValue={searchValue} />
+      ) : (
+        <RandomCocktail />
+      )}
+      {/* si searchValue est true (elle existe) et enter est true mount SearchResulst
+           else mount RandomCocktail */}
       <FormulaireCreationCocktails />
       <FormulaireContact />
     </div>
-    //   <Switch>
-    //     <Route exact path="/">
-    //       <App />
-    //     </Route>
-    //     <Route path="/Bar">
-    //       <NomComposantBar />
-    //     </Route>
-    //   </Switch>
-    // </Router>
   );
 }
 
