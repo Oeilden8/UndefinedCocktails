@@ -32,6 +32,8 @@ function App() {
   return (
     <div className="App">
       <BurgerMenu />
+      <HomeSearch />
+      <RandomCocktail />
       <HomeSearch
         handleValue={handleValue}
         searchValue={searchValue}
@@ -42,8 +44,8 @@ function App() {
       ) : (
         <RandomCocktail />
       )}
-      {/* si searchValue est true (elle existe) et enter est true mount SearchResulst
-           else mount RandomCocktail */}
+      // si searchValue est true (elle existe) et enter est true mount
+      SearchResulst // else mount RandomCocktail
       <FormulaireCreationCocktails />
       <FormulaireContact />
     </div>
