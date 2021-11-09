@@ -9,7 +9,6 @@ import HomeSearch from './components/HomeSearch';
 import RandomCocktail from './components/RandomCocktail';
 import SearchResults from './components/SearchResults';
 
-
 function App() {
   const [searchValue, setSearchValue] = React.useState('');
   // state de la barre de recherche de l'enfant HomeSearch
@@ -42,13 +41,12 @@ function App() {
         <SearchResults searchValue={searchValue} />
       ) : (
         <RandomCocktail />
+        // si searchValue est true (elle existe) et enter est true mount SearchResult
+        // else mount RandomCocktail
       )}
-          // si searchValue est true (elle existe) et enter est true mount SearchResulst
-          // else mount RandomCocktail
       <FormulaireCreationCocktails />
       <FormulaireContact />
     </div>
-
   );
 }
 
