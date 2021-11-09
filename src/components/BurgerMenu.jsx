@@ -21,4 +21,5 @@ const BurgerMenu = () => {
     </header>
   );
 };
+
 export default BurgerMenu;
