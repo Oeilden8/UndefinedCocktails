@@ -1,4 +1,4 @@
-ul {
+.nav {
   list-style: none;
   padding: 15px 15px 0 15px;
   display: flex;
@@ -12,7 +12,7 @@ ul {
   top: 45px;
 }
 
-li {
+.nav li {
   margin-bottom: 25px;
   color: white;
   text-align: left;
