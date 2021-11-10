@@ -29,6 +29,7 @@
 .hover:hover img {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
+  cursor: pointer;
 }
 
 h4 {
@@ -102,7 +103,7 @@ h4 {
   color: white;
   font-family: 'Economica', sans-serif;
   font-size: 20pt;
-  background-image: url(../assets/button-citron.png);
+  background-image: url(../../assets/button-citron.png);
   background-repeat: no-repeat;
   background-size: contain;
   padding-left: 8vw;
@@ -199,7 +200,7 @@ h4 {
     color: white;
     font-family: 'Economica', sans-serif;
     font-size: 15pt;
-    background-image: url(../assets/button-citron.png);
+    background-image: url(../../assets/button-citron.png);
     background-repeat: no-repeat;
     background-size: contain;
     text-align: center;

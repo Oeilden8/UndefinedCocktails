@@ -5,10 +5,11 @@ import axios from 'axios';
 export default function CocktailCard(props) {
   const { idDrink } = props;
   const [drinkCard, setDrinkCard] = React.useState([]);
+  console.log(idDrink);
 
   React.useEffect(() => {
     axios
-      .get('www.thecocktaildb.com/api/json/v1/1/lookup.php?i={idDrink}')
+      .get(`www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
       .then((resp) => setDrinkCard(resp.data.drinks[0]))
       .catch((error) => console.log(error));
   }, [idDrink]);

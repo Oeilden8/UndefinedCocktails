@@ -10,6 +10,9 @@ export default function SearchResults({ searchValue }) {
   const handleClick = () => {
     setRefresh(!refresh);
   };
+  const handleCocktail = () => {
+    return <CocktailCard />;
+  };
 
   React.useEffect(() => {
     axios
@@ -48,13 +51,19 @@ export default function SearchResults({ searchValue }) {
       <h1>Here is a cocktail selection mixed with {searchValue}</h1>
       <div className="grid-search">
         {result.map((search, index) => (
-          <section className="hover" id={index.toString()}>
+          <section
+            className="hover"
+            id={index.toString()}
+            onClick={handleCocktail}
+            role="button"
+            tabIndex={0}
+            onKeyDown={handleCocktail}
+          >
             <CocktailCard idDrink={search.idDrink} />
             <img
               src={search.strDrinkThumb}
               alt="cocktail"
               className="result-image"
-              onClick={<CocktailCard />}
             />
             <h4>{search.strDrink.toUpperCase()}</h4>
           </section>
