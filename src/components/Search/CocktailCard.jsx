@@ -2,56 +2,65 @@ import React from 'react';
 import '../CocktailCard.css';
 import axios from 'axios';
 
-export default function CocktailCard(props) {
-  const { idDrink } = props;
-  const [drinkCard, setDrinkCard] = React.useState([]);
-  console.log(idDrink);
+export default function CocktailCard({ idCocktail, handleCocktail }) {
+  const [drinkCard, setDrinkCard] = React.useState();
+  console.log(`idDrink passée ${idCocktail}`);
 
   React.useEffect(() => {
     axios
-      .get(`www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
-      .then((resp) => setDrinkCard(resp.data.drinks[0]))
+      .get(
+        `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idCocktail}`
+      )
+      .then((resp) => {
+        setDrinkCard(resp.data.drinks[0]);
+      })
       .catch((error) => console.log(error));
-  }, [idDrink]);
+  }, [idCocktail]);
 
   return (
-    <section id="card">
-      {drinkCard.map((drink) => (
+    <section
+      id="card"
+      role="button"
+      tabIndex={0}
+      onKeyDown={handleCocktail}
+      onClick={handleCocktail}
+    >
+      {drinkCard && (
         <div className="cocktail-cart">
           <img
-            src={drink.strDrinkThumb}
+            src={drinkCard.strDrinkThumb}
             alt="cocktail"
             className="cocktail-image"
           />
 
           <ul className="ingredients">
             <li>
-              <h2>{drink.strDrink.toUpperCase()}</h2>
+              <h2>{drinkCard.strDrink.toUpperCase()}</h2>
             </li>
             <li>
-              {drink.strIngredient1} {drink.strMeasure1}
+              {drinkCard.strIngredient1} {drinkCard.strMeasure1}
             </li>
             <li>
-              {drink.strIngredient2} {drink.strMeasure2}
+              {drinkCard.strIngredient2} {drinkCard.strMeasure2}
             </li>
             <li>
-              {drink.strIngredient3} {drink.strMeasure3}
+              {drinkCard.strIngredient3} {drinkCard.strMeasure3}
             </li>
             <li>
-              {drink.strIngredient4} {drink.strMeasure4}
+              {drinkCard.strIngredient4} {drinkCard.strMeasure4}
             </li>
             <li>
-              {drink.strIngredient5} {drink.strMeasure5}
+              {drinkCard.strIngredient5} {drinkCard.strMeasure5}
             </li>
             <li>
-              {drink.strIngredient6} {drink.strMeasure6}
+              {drinkCard.strIngredient6} {drinkCard.strMeasure6}
             </li>
           </ul>
 
           <h2>MIX IT</h2>
-          <p className="recipe">{drink.strInstructions}</p>
+          <p className="recipe">{drinkCard.strInstructions}</p>
         </div>
-      ))}
+      )}
     </section>
   );
 }
