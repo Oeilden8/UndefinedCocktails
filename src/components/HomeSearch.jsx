@@ -8,7 +8,7 @@ export default function HomeSearch(props) {
   // passe l'évenement qui écoute la touche entrée ds l'input au composant parent App
 
   return (
-    <div className="search" id="#section1">
+    <div className="search" id="sectionHome">
       <input
         type="text"
         className="search-bar"
