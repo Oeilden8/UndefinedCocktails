@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  background: linear-gradient(to right, #fff200, #f37029, #e93e3a);
+  text-align: center;
+  justify-content: space-between;
+}
+
+.textAlcool {
+  font-size: 18px;
+  margin-left: 100px;
+}
+
+.containerGeo {
+  display: flex;
+}
+
+.containerGeo p {
+  margin-right: 10px;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.geoImgLogo {
+  cursor: pointer;
+  width: 35px;
+  height: 40px;
+  margin: 5px 15px 5px 0;
+}

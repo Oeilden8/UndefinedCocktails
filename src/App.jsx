@@ -8,6 +8,7 @@ import BurgerMenu from './components/BurgerMenu';
 import HomeSearch from './components/HomeSearch';
 import RandomCocktail from './components/RandomCocktail';
 import SearchResults from './components/SearchResults';
+import Footer from './components/Footer';
 
 function App() {
   const [searchValue, setSearchValue] = React.useState('');
@@ -46,6 +47,7 @@ function App() {
       )}
       <FormulaireCreationCocktails />
       <FormulaireContact />
+      <Footer />
     </div>
   );
 }
