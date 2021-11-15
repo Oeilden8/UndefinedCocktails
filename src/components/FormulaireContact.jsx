@@ -21,7 +21,6 @@ function formulaireContact() {
   };
   return (
     <div className="formulaireContact">
-      <hr />
       <form>
         <h1>Would you like to contact us?</h1>
         <p className="textContact">Would you like to contact us? </p>

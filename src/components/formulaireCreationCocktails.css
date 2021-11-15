@@ -11,9 +11,13 @@ h3 {
 
 /* ---------- Le formulaire ---------- */
 
+.formulaire {
+  display: flex;
+  justify-content: center;
+}
+
 form {
   display: flex;
-  margin-left: 20%;
   flex-direction: column;
   height: 960px;
   width: 730px;
@@ -25,7 +29,7 @@ input {
   height: 30px;
   border-radius: 7px;
   font-size: 18px;
-  border-color: orange;
+  border-color: #e93e3a;
   font-family: 'Economica', Arial, Helvetica, sans-serif;
   align-items: stretch;
 }
@@ -42,7 +46,7 @@ input {
   vertical-align: top;
   height: 200px;
   width: 100%;
-  border-color: orange;
+  border-color: #e93e3a;
   border-radius: 7px;
   font-size: 18px;
   font-family: 'Economica', Arial, Helvetica, sans-serif;
@@ -55,17 +59,13 @@ input {
   margin-left: 40%;
   border-radius: 1em;
   width: 100px;
-  background-color: orangered;
+  background-color: #e93e3a;
   border: none;
   color: white;
   font-weight: 600;
   font-family: 'Economica', Arial, Helvetica, sans-serif;
   font-size: 16px;
   cursor: pointer;
-}
-
-.submitCocktails:hover {
-  background-color: #f0743f;
 }
 
 /* ---------- Partie Responsive du Formulaire ---------- */
