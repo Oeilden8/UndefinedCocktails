@@ -1,13 +1,23 @@
 import React from 'react';
 import './SearchResults.css';
 import axios from 'axios';
+import CocktailCard from './CocktailCard';
 
 export default function SearchResults({ searchValue }) {
   const [result, setResult] = React.useState([]);
-  const [refresh, setRefresh] = React.useState(true);
+
   // state changé par le bouton qui permet de re-render le useEffect
+  const [refresh, setRefresh] = React.useState(true);
   const handleClick = () => {
     setRefresh(!refresh);
+  };
+
+  const [idCocktail, setIdCocktail] = React.useState('');
+
+  // state affichant ou non CocktailCard
+  const [cardOpen, setCardOpen] = React.useState(false);
+  const handleCocktail = () => {
+    setCardOpen(!cardOpen);
   };
 
   React.useEffect(() => {
@@ -46,8 +56,59 @@ export default function SearchResults({ searchValue }) {
     <div className="search-container">
       <h1>Here is a cocktail selection mixed with {searchValue}</h1>
       <div className="grid-search">
+        {cardOpen ? (
+          <CocktailCard
+            idCocktail={idCocktail}
+            handleCocktail={handleCocktail}
+          />
+        ) : null}
         {result.map((search, index) => (
-          <section className="hover" id={index.toString()}>
+          <section
+            className="hover"
+            id={index.toString()}
+            onClick={() => {
+              setIdCocktail(search.idDrink.toString());
+              console.log(`idDrink recupérée ${idCocktail}`);
+              handleCocktail();
+            }}
+            role="button"
+            tabIndex={0}
+            onKeyDown={handleCocktail}
+          >
+            <img
+              src={search.strDrinkThumb}
+              alt="cocktail"
+              className="result-image"
+            />
+            <h4>{search.strDrink.toUpperCase()}</h4>
+            {/* affiche la Card si CardOpen=true et passe la props idDrink à CocktailCard */}
+          </section>
+        ))}
+
+        <button type="button" className="search-button" onClick={handleClick}>
+          Click here if you want more results
+        </button>
+      </div>
+      <div className="grid-search-mobi">
+        {cardOpen ? (
+          <CocktailCard
+            idCocktail={idCocktail}
+            handleCocktail={handleCocktail}
+          />
+        ) : null}
+        {result.slice(-6).map((search, index) => (
+          <section
+            className="hover"
+            id={index.toString()}
+            onClick={() => {
+              setIdCocktail(search.idDrink.toString());
+              console.log(`idDrink recupérée ${idCocktail}`);
+              handleCocktail();
+            }}
+            role="button"
+            tabIndex={0}
+            onKeyDown={handleCocktail}
+          >
             <img
               src={search.strDrinkThumb}
               alt="cocktail"
@@ -59,18 +120,6 @@ export default function SearchResults({ searchValue }) {
         <button type="button" className="search-button" onClick={handleClick}>
           Click here if you want more results
         </button>
-      </div>
-      <div className="grid-search-mobi">
-        {result.slice(-6).map((search, index) => (
-          <section id={index.toString()}>
-            <img
-              src={search.strDrinkThumb}
-              alt="cocktail"
-              className="result-image"
-            />
-            <h4>{search.strDrink.toUpperCase()}</h4>
-          </section>
-        ))}
       </div>
     </div>
   );
