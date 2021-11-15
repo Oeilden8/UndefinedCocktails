@@ -65,7 +65,7 @@ export default function HomeSearch(props) {
         placeholder="  &#x1F50E;   Search by name, ingrédient..."
         onChange={handleValue}
         onKeyUp={handleEnter}
-        onKey={handleSuggestion}
+        onKeyDown={handleSuggestion}
       />
       {showSuggestions && searchValue && <SuggestionsList />}
       {/* si showSuggestion est true, qu'on a un input (=searchValue) on appelle la liste */}
