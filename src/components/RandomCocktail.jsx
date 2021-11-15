@@ -17,7 +17,7 @@ export default function RandomCocktail() {
   }, []);
 
   return (
-    <section id="home">
+    <section id="accueil">
       <h1>Lacking inspiration? Try today&#39;s cocktail : </h1>
 
       {random.map((rand) => (
