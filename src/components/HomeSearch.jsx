@@ -3,15 +3,19 @@ import React from 'react';
 import './Home.css';
 
 export default function HomeSearch(props) {
-  const { searchValue, handleValue, handleEnter } = props;
+  const {
+    searchValue,
+    handleValue,
+    handleEnter,
+    showSuggestions,
+    setShowSuggestions,
+  } = props;
   // passe le state recupéré dans la barre de recherche au parent App
   // passe l'évenement qui écoute la touche entrée ds l'input au composant parent App
 
   const [suggestions, setSuggestion] = React.useState([]);
   const [filteredSuggestions, setFilteredSuggestions] = React.useState([]);
   // const [suggestionsIndex, setSuggestionsIndex] = React.useState(0); | pas compris a quoi ca sert?
-  const [showSuggestions, setShowSuggestions] = React.useState(false);
-  // liste des suggestions pas affichée par défaut
 
   React.useEffect(() => {
     axios
@@ -23,6 +27,8 @@ export default function HomeSearch(props) {
         }
         setSuggestion(suggArray);
       })
+      // la réponse est un tableau de max 100 objets strIngredient1=ingrédient,
+      // pour récupérer seulement l'ingrédient j'ai fait une boucle
       .catch((error) => console.log(error));
   }, []);
 
@@ -48,6 +54,7 @@ export default function HomeSearch(props) {
       </ul>
     );
   };
+  // liste des ingrédients suggérés
 
   return (
     <div className="search" id="sectionHome">
@@ -58,9 +65,10 @@ export default function HomeSearch(props) {
         placeholder="  &#x1F50E;   Search by name, ingrédient..."
         onChange={handleValue}
         onKeyUp={handleEnter}
-        onKeyDown={handleSuggestion}
+        onKey={handleSuggestion}
       />
       {showSuggestions && searchValue && <SuggestionsList />}
+      {/* si showSuggestion est true, qu'on a un input (=searchValue) on appelle la liste */}
     </div>
   );
 }

@@ -28,8 +28,7 @@
   position: absolute;
   align-self: flex-start;
   margin-top: 110px;
-  display: block;
-  width: 68vw;
+  width: 67vw;
   border-radius: 10px;
 }
 
@@ -52,6 +51,16 @@
     min-width: 280px;
     height: 25px;
     font-size: 13pt;
+  }
+
+  .suggestion {
+    width: 55vw;
+    min-width: 250px;
+    margin-top: 50px;
+  }
+
+  .suggestion li {
+    font-size: 11pt;
   }
 }
 
