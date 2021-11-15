@@ -1,21 +1,13 @@
 /* ------ Css du Formulaire de Contact ------ */
-hr {
-  width: 50%;
-  margin-bottom: 40px;
-  height: 1px;
-  background-color: #fa5e3e;
-  border-color: #fa5e3e;
-}
-
-@media only screen and (max-width: 770px) {
-  hr {
-    margin-top: 80px;
-  }
-}
 
 .textContact {
   margin-bottom: 20px;
   padding: 0;
+}
+
+.formulaireContact {
+  display: flex;
+  justify-content: center;
 }
 
 #name {
@@ -33,8 +25,19 @@ hr {
 #message {
   width: 100%;
   height: 200px;
-  border-color: orange;
+  border-color: #e93e3a;
   border-radius: 7px;
   font-size: 18px;
   font-family: 'Economica', Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 770px) {
+  .textContact {
+    margin-bottom: 0;
+  }
+
+  #message {
+    font-size: 15px;
+    height: 90px;
+  }
 }

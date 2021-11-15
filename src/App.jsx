@@ -7,6 +7,7 @@ import FormulaireCreationCocktails from './components/FormulaireCreationCocktail
 import BurgerMenu from './components/BurgerMenu';
 import HomeSearch from './components/HomeSearch';
 import RandomCocktail from './components/RandomCocktail';
+import Footer from './components/Footer';
 import SearchResults from './components/Search/SearchResults';
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
       )}
       <FormulaireCreationCocktails />
       <FormulaireContact />
+      <Footer />
     </div>
   );
 }
