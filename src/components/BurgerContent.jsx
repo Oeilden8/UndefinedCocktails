@@ -5,11 +5,27 @@ function BurgerContent() {
   return (
     <div>
       <ul className="nav">
-        <li>Home</li>
-        <li>Cocktails</li>
+        <li>
+          <a className="section" href="#sectionHome">
+            Home
+          </a>
+        </li>
+        <li>
+          <a className="section" href="#accueil">
+            Cocktails
+          </a>
+        </li>
         <li>Trouver un Bar</li>
-        <li>Création</li>
-        <li>Contact</li>
+        <li>
+          <a className="section" href="#sectionCréation">
+            Création
+          </a>
+        </li>
+        <li>
+          <a className="section" href="#sectionContact">
+            Contact
+          </a>
+        </li>
       </ul>
     </div>
   );

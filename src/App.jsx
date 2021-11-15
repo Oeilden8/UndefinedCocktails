@@ -7,14 +7,16 @@ import FormulaireCreationCocktails from './components/FormulaireCreationCocktail
 import BurgerMenu from './components/BurgerMenu';
 import HomeSearch from './components/HomeSearch';
 import RandomCocktail from './components/RandomCocktail';
-import SearchResults from './components/SearchResults';
 import Footer from './components/Footer';
+import SearchResults from './components/Search/SearchResults';
 
 function App() {
   const [searchValue, setSearchValue] = React.useState('');
   // state de la barre de recherche de l'enfant HomeSearch
   const [enter, setEnter] = React.useState(false);
   // state lançant la recherche via enter (enter est pressé = true, par default false)
+  const [showSuggestions, setShowSuggestions] = React.useState(false);
+  // liste des suggestions affichée ou non
   const handleValue = (e) => {
     setSearchValue(e.target.value);
     setEnter(false);
@@ -24,6 +26,7 @@ function App() {
   const handleEnter = (e) => {
     if (e.key === 'Enter') {
       setEnter(true);
+      setShowSuggestions(false);
       console.log(searchValue);
       // si on appuie sur enter, enter=true et la recherche est lancée, le composant SearchResults mount, l'api est appelée
       // else le composant ne se monte pas
@@ -37,6 +40,8 @@ function App() {
         handleValue={handleValue}
         searchValue={searchValue}
         handleEnter={handleEnter}
+        showSuggestions={showSuggestions}
+        setShowSuggestions={setShowSuggestions}
       />
       {searchValue && enter ? (
         <SearchResults searchValue={searchValue} />

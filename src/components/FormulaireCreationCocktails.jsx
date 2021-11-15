@@ -40,7 +40,7 @@ function FormulaireCreationCocktails() {
     setPreparation(' ');
   };
   return (
-    <div className="formulaire">
+    <div className="formulaire" id="sectionCréation">
       <form>
         <h1>What about offering your own cocktail?</h1>
         {/* Input pour le Nom du Cocktail */}
