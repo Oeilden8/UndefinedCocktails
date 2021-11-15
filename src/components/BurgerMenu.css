@@ -7,11 +7,12 @@ header {
   color: white;
   position: sticky;
   top: 0;
+  z-index: 99;
+  align-items: center;
 }
 
 .title {
   width: 100%;
-  position: sticky;
 }
 
 h1 {
