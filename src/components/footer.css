@@ -12,6 +12,7 @@ footer {
 
 .containerGeo {
   display: flex;
+  align-items: center;
 }
 
 .containerGeo p {
@@ -25,5 +26,17 @@ footer {
   cursor: pointer;
   width: 35px;
   height: 40px;
-  margin: 5px 15px 5px 0;
+  margin: 0 5px 5px 0;
+}
+
+@media only screen and (max-width: 770px) {
+  .textAlcool {
+    font-size: 16px;
+    margin-left: 30px;
+  }
+
+  .containerGeo p {
+    font-size: 16px;
+    margin-right: 0;
+  }
 }

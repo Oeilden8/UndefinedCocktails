@@ -30,3 +30,14 @@
   font-size: 18px;
   font-family: 'Economica', Arial, Helvetica, sans-serif;
 }
+
+@media only screen and (max-width: 770px) {
+  .textContact {
+    margin-bottom: 0;
+  }
+
+  #message {
+    font-size: 15px;
+    height: 90px;
+  }
+}

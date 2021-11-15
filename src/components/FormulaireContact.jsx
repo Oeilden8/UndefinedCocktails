@@ -67,11 +67,11 @@ function formulaireContact() {
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Hello, I am contacting you because there is a bug on a part of your site."
           />
+          {/* Button Envoyé */}
+          <button type="submit" onClick={display} className="submitCocktails">
+            Send
+          </button>
         </label>
-        {/* Button Envoyé */}
-        <button type="submit" onClick={display} className="submitCocktails">
-          Send
-        </button>
       </form>
     </div>
   );
