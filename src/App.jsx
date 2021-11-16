@@ -9,6 +9,7 @@ import HomeSearch from './components/HomeSearch';
 import RandomCocktail from './components/RandomCocktail';
 import Footer from './components/Footer';
 import SearchResults from './components/Search/SearchResults';
+import ArrowButton from './components/ArrowButton';
 
 function App() {
   const [searchValue, setSearchValue] = React.useState('');
@@ -36,6 +37,7 @@ function App() {
   return (
     <div className="App">
       <BurgerMenu />
+      <ArrowButton />
       <HomeSearch
         handleValue={handleValue}
         searchValue={searchValue}
