@@ -13,7 +13,7 @@
   padding-top: 30px;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 568px) {
   #card {
     height: 700px;
     padding-top: 150px;

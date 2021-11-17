@@ -9,15 +9,13 @@ const BurgerMenu = () => {
   };
   return (
     <header id="home" className={`${open ? 'is-open' : ''}  `}>
-      <button type="button" onClick={handleClick} className="burger__menu">
+      <button type="button" onClick={handleClick} className="burger-menu">
         <span />
         <span />
         <span />
       </button>
       {open ? <BurgerContent /> : null}
-      <div className="title">
-        <h1>Undefined Cocktails</h1>
-      </div>
+      <div className="title">Undefined Cocktails</div>
     </header>
   );
 };
