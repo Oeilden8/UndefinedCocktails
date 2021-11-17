@@ -41,7 +41,6 @@ function FormulaireCreationCocktails() {
   };
   return (
     <div className="formulaire" id="sectionCréation">
-      <hr />
       <form>
         <h1>What about offering your own cocktail?</h1>
         {/* Input pour le Nom du Cocktail */}
