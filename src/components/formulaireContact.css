@@ -1,10 +1,5 @@
 /* ------ Css du Formulaire de Contact ------ */
 
-.textContact {
-  margin-bottom: 20px;
-  padding: 0;
-}
-
 .formulaireContact {
   display: flex;
   justify-content: center;
