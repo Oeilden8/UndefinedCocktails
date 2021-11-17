@@ -61,6 +61,7 @@ function App() {
       <FormulaireCreationCocktails />
       <FormulaireContact />
       <Footer />
+        </>
         <Route
           path="/mapbar"
           element={
