@@ -18,7 +18,7 @@ function BurgerContent() {
         </li>
         <li>
           <Link className="link" to="/mapbar">
-            Trouver un Bar
+            Find a Bar
           </Link>
         </li>
         <li>

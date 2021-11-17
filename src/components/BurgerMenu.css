@@ -13,6 +13,9 @@
 
 .title {
   width: 100%;
+  font-family: 'Kalam', cursive;
+  font-size: 25pt;
+  padding-right: 60px;
 }
 
 h1 {
@@ -20,13 +23,13 @@ h1 {
   color: white;
 }
 
-.burger__menu {
+.burger-menu {
   justify-content: flex-start;
   border-color: transparent;
   background-color: transparent;
 }
 
-.burger__menu > span {
+.burger-menu > span {
   display: block;
   height: 5px;
   width: 40px;
@@ -35,7 +38,7 @@ h1 {
   justify-content: flex-start;
 }
 
-.burger__menu span:nth-child(1) {
+.burger-menu span:nth-child(1) {
   height: 5px;
   width: 40px;
   background-color: red;
@@ -43,7 +46,7 @@ h1 {
   transform-origin: top right;
 }
 
-.burger__menu span:nth-child(3) {
+.burger-menu span:nth-child(3) {
   height: 5px;
   width: 40px;
   background-color: red;
@@ -51,15 +54,15 @@ h1 {
   transition: 0.3s;
 }
 
-#home.is-open .burger__menu span:nth-child(2) {
+#home.is-open .burger-menu span:nth-child(2) {
   animation: fadeOutRight 0.3s both;
 }
 
-#home.is-open .burger__menu span:nth-child(1) {
+#home.is-open .burger-menu span:nth-child(1) {
   transform: rotate(-45deg);
 }
 
-#home.is-open .burger__menu span:nth-child(3) {
+#home.is-open .burger-menu span:nth-child(3) {
   margin-top: -2px;
   transform: rotate(45deg);
 }
@@ -74,4 +77,10 @@ h1 {
 .section {
   color: white;
   text-decoration: none;
+}
+
+@media screen and (max-width: 568px) {
+  .title {
+    font-size: 18pt;
+  }
 }
