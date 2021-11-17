@@ -1,4 +1,8 @@
 /* ---------- Css du formulaire de creation du cocktails ---------- */
+hr {
+  background-color: transparent;
+  border-color: transparent;
+}
 
 h3 {
   text-align: left;

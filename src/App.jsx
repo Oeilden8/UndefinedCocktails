@@ -2,11 +2,14 @@
 // import ReactDOM from 'react-dom';
 import React from 'react';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import FormulaireContact from './components/FormulaireContact';
 import FormulaireCreationCocktails from './components/FormulaireCreationCocktails';
 import BurgerMenu from './components/BurgerMenu';
+import BurgerMenu2 from './components/BurgerMenu2';
 import HomeSearch from './components/HomeSearch';
 import RandomCocktail from './components/RandomCocktail';
+import MapBar from './components/MapBar';
 import Footer from './components/Footer';
 import SearchResults from './components/Search/SearchResults';
 import ArrowButton from './components/ArrowButton';
@@ -36,25 +39,43 @@ function App() {
 
   return (
     <div className="App">
-      <BurgerMenu />
-      <ArrowButton />
-      <HomeSearch
-        handleValue={handleValue}
-        searchValue={searchValue}
-        handleEnter={handleEnter}
-        showSuggestions={showSuggestions}
-        setShowSuggestions={setShowSuggestions}
-      />
-      {searchValue && enter ? (
-        <SearchResults searchValue={searchValue} />
-      ) : (
-        <RandomCocktail />
-        // si searchValue est true (elle existe) et enter est true mount SearchResulst
-        // else mount RandomCocktail
-      )}
-      <FormulaireCreationCocktails />
-      <FormulaireContact />
-      <Footer />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <BurgerMenu />
+              <ArrowButton />
+              <HomeSearch
+                handleValue={handleValue}
+                searchValue={searchValue}
+                handleEnter={handleEnter}
+                showSuggestions={showSuggestions}
+                setShowSuggestions={setShowSuggestions}
+              />
+              {searchValue && enter ? (
+                <SearchResults searchValue={searchValue} />
+              ) : (
+                <RandomCocktail />
+                // si searchValue est true (elle existe) et enter est true mount SearchResulst
+                // else mount RandomCocktail
+              )}
+              <FormulaireCreationCocktails />
+              <FormulaireContact />
+              <Footer />
+            </div>
+          }
+        />
+        <Route
+          path="/mapbar"
+          element={
+            <>
+              <BurgerMenu2 />
+              <MapBar />
+            </>
+          }
+        />
+      </Routes>
     </div>
   );
 }

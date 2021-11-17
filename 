@@ -1,0 +1,518 @@
+[33mcommit 44119126d29fdde3781110dd2e244dc2d83851bb[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m, [m[1;31morigin/bar[m[33m, [m[1;32mbar[m[33m)[m
+Merge: f8db23c d15ee68
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Wed Nov 17 10:02:09 2021 +0100
+
+    Merge pull request #20 from WildCodeSchool/MergeDevCorrections
+    
+    correction of closing tags
+
+[33mcommit d15ee68a751b27cda524564c58c8f41367e78aa7[m
+Author: Fanny <oeilden8@gmail.com>
+Date:   Wed Nov 17 10:00:54 2021 +0100
+
+    correction of closing tags
+
+[33mcommit f8db23c09425073758fa41039e44d9c55d676163[m
+Merge: b728356 95be91b
+Author: Fanny <89994574+Oeilden8@users.noreply.github.com>
+Date:   Wed Nov 17 09:51:38 2021 +0100
+
+    Merge pull request #19 from WildCodeSchool/bar
+    
+    Initialisation MapBar
+
+[33mcommit 95be91b5b93717052d7bd7b1b8b40462323d7c41[m
+Author: [LL] Benjamin CORDREAUX <80336250+Benjicor@users.noreply.github.com>
+Date:   Wed Nov 17 09:45:07 2021 +0100
+
+    Ajout balise fermante
+
+[33mcommit 357ddd9b5831e66605bdfd91a5e96aa848ba458b[m
+Merge: 83d1383 b728356
+Author: [LL] Benjamin CORDREAUX <80336250+Benjicor@users.noreply.github.com>
+Date:   Wed Nov 17 09:36:26 2021 +0100
+
+    Merge branch 'dev' into bar
+
+[33mcommit b728356b0be88fbc64208de78e7f371e8f00093f[m
+Merge: 23c657a d2ce7fc
+Author: Fanny <89994574+Oeilden8@users.noreply.github.com>
+Date:   Mon Nov 15 17:24:18 2021 +0100
+
+    Merge pull request #18 from WildCodeSchool/footer
+    
+    Footer
+
+[33mcommit d2ce7fc1737d1def4a1ad90e8bbd8ac219396ffa[m
+Merge: c734e17 23c657a
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Mon Nov 15 17:23:11 2021 +0100
+
+    Merge branch 'dev' into footer
+
+[33mcommit 23c657adae7ab8f67c5d451248231f2c1c40e05c[m
+Merge: 19ac8fc 8698d08
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Mon Nov 15 17:15:45 2021 +0100
+
+    Merge pull request #17 from WildCodeSchool/MajdevFanny
+    
+    Majdev fanny
+
+[33mcommit 8698d08c90029e337cf019b7fe85be6fdd378804[m
+Author: Fanny <oeilden8@gmail.com>
+Date:   Mon Nov 15 17:14:08 2021 +0100
+
+    branche test pour regler mon pbm de branche dev en avance
+
+[33mcommit 10cdbaa3a03dfae1c444f150c1e3bd69cc1d12f2[m
+Merge: 8488ff8 19ac8fc
+Author: Fanny <oeilden8@gmail.com>
+Date:   Mon Nov 15 17:01:19 2021 +0100
+
+    merge ok
+
+[33mcommit 19ac8fc034fd260aff31f462bfb9e92e4aa148a5[m
+Merge: ad9a340 bb828b0
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Mon Nov 15 16:58:30 2021 +0100
+
+    Merge pull request #16 from WildCodeSchool/CocktailCard
+    
+    Cocktail card
+
+[33mcommit bb828b084037517b109a8f9a85d9e27c7a18d536[m
+Author: Fanny <oeilden8@gmail.com>
+Date:   Mon Nov 15 16:56:26 2021 +0100
+
+    minor corrections
+
+[33mcommit c734e17d3058c795d6dc0777997b9c29330753cc[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Mon Nov 15 16:48:23 2021 +0100
+
+    Responsive du footer et des formulaire
+
+[33mcommit f6db05527acdea64b1b1b8cc2a1974b62dd226f1[m
+Author: Fanny <oeilden8@gmail.com>
+Date:   Mon Nov 15 16:33:28 2021 +0100
+
+    added autocompletion in Homesearch
+
+[33mcommit 147f70bc80c8d746ee19c782e2635c6245dacb8f[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Mon Nov 15 14:51:33 2021 +0100
+
+    Réglage couleur formulaire et centrage sur la page des formulaire
+
+[33mcommit 83d1383731c7cf4f023745ea6550d55886d8a739[m
+Author: [LL] Benjamin CORDREAUX <cordreaux.benjamin@gmail.com>
+Date:   Wed Nov 10 17:27:42 2021 +0100
+
+    Initialisation MapBar
+
+[33mcommit ee08c1aed45eb6a4f3bdb9646088b6b3d5b2f81e[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Wed Nov 10 17:14:04 2021 +0100
+
+    Ajout du Footer
+
+[33mcommit d3ed3c6ff835f68b10ad07ef53ce0422b62ee971[m
+Author: Fanny <oeilden8@gmail.com>
+Date:   Wed Nov 10 17:06:23 2021 +0100
+
+    card is working
+
+[33mcommit e4da216b8ca4788571697065c904204da255d811[m
+Merge: abe2584 ad9a340
+Author: Fanny <oeilden8@gmail.com>
+Date:   Wed Nov 10 10:55:51 2021 +0100
+
+    merged conflict
+
+[33mcommit 8488ff8993426a50f2460a2c193bf8229d1d55ac[m
+Merge: bb002ff ad9a340
+Author: Fanny <oeilden8@gmail.com>
+Date:   Wed Nov 10 10:19:57 2021 +0100
+
+    Merge branch 'dev' of https://github.com/WildCodeSchool/laloupe-js-202109-p2-undefinedCocktails into dev
+
+[33mcommit abe25847f9b1f01f6dcc27f95d00290c6ff1a92f[m
+Author: Fanny <oeilden8@gmail.com>
+Date:   Wed Nov 10 10:19:29 2021 +0100
+
+    added handleclick on section
+
+[33mcommit ad9a3407e8f590c273923b771faf21c9469a5170[m
+Merge: 64418bc a4eb743
+Author: Fanny <89994574+Oeilden8@users.noreply.github.com>
+Date:   Tue Nov 9 17:15:20 2021 +0100
+
+    Merge pull request #15 from WildCodeSchool/menu
+    
+    Menu
+
+[33mcommit dfa01433a74e06bcee26439c351def26f457f5ec[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Tue Nov 9 17:13:31 2021 +0100
+
+    initialisation de la branch footer
+
+[33mcommit a4eb743cf9576bb45f86349f46f1245011b2d3ba[m[33m ([m[1;31morigin/menu[m[33m)[m
+Author: [LL] Benjamin CORDREAUX <cordreaux.benjamin@gmail.com>
+Date:   Tue Nov 9 16:39:04 2021 +0100
+
+    Fin Burger Menu
+
+[33mcommit 0c81dc9baa7bf85f9291f38f2284df5498debca9[m
+Author: Fanny <oeilden8@gmail.com>
+Date:   Tue Nov 9 16:35:31 2021 +0100
+
+    created branch, moved SearchResult to new dir and and fetched API via id
+
+[33mcommit 715cfed2470719dd15746a5e66d3126e8304591c[m
+Merge: 79c6460 64418bc
+Author: [LL] Benjamin CORDREAUX <cordreaux.benjamin@gmail.com>
+Date:   Tue Nov 9 15:43:32 2021 +0100
+
+    Merge branch 'dev' of https://github.com/WildCodeSchool/laloupe-js-202109-p2-undefinedCocktails into menu
+
+[33mcommit 64418bc955936d7ecaedd559ca5063a69c15d79b[m
+Merge: deba5f5 bdffdc0
+Author: Fanny <89994574+Oeilden8@users.noreply.github.com>
+Date:   Tue Nov 9 15:43:09 2021 +0100
+
+    Merge pull request #14 from WildCodeSchool/menu
+    
+    Update BurgerContent.css
+
+[33mcommit bdffdc0802d5ad4870126c3aef99079cd97bd983[m
+Author: [LL] Benjamin CORDREAUX <80336250+Benjicor@users.noreply.github.com>
+Date:   Tue Nov 9 15:39:36 2021 +0100
+
+    Update BurgerContent.css
+
+[33mcommit 79c6460c30391345d86a8669903d24ed421af0bc[m
+Merge: 8e35d66 deba5f5
+Author: [LL] Benjamin CORDREAUX <cordreaux.benjamin@gmail.com>
+Date:   Tue Nov 9 15:37:33 2021 +0100
+
+    Merge branch 'dev' of https://github.com/WildCodeSchool/laloupe-js-202109-p2-undefinedCocktails into menu
+
+[33mcommit 8e35d6639b95c2d3d156f54370fb2ceaca03282f[m
+Author: [LL] Benjamin CORDREAUX <cordreaux.benjamin@gmail.com>
+Date:   Tue Nov 9 15:35:24 2021 +0100
+
+    Modif className BurgerContent.css
+
+[33mcommit deba5f599b9f7de25996bc0543eb56156f3fce0b[m
+Merge: 82e0eaa bc71ffb
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Tue Nov 9 15:11:16 2021 +0100
+
+    Merge pull request #13 from WildCodeSchool/menu
+    
+    Menu
+
+[33mcommit bc71ffb0e2ea78ee6c861cc27c2547fb63d4f3d6[m
+Merge: 90831a5 82e0eaa
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Tue Nov 9 15:10:56 2021 +0100
+
+    Merge branch 'dev' into menu
+
+[33mcommit 90831a5370695c6cfdb67c28ee913f8e169a6d55[m
+Author: [LL] Benjamin CORDREAUX <cordreaux.benjamin@gmail.com>
+Date:   Tue Nov 9 15:03:48 2021 +0100
+
+    Finition Burger Menu
+
+[33mcommit bb002ffeb72ba41933d65f5b81eb4e85bd8f787f[m
+Merge: 0f2a415 82e0eaa
+Author: Fanny <oeilden8@gmail.com>
+Date:   Tue Nov 9 14:47:31 2021 +0100
+
+    merge ok
+
+[33mcommit b7e3574713f62d2ccef46ca052bf2acaab4e2f87[m
+Merge: 66dca7c 82e0eaa
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Tue Nov 9 14:46:43 2021 +0100
+
+    problème doublon
+
+[33mcommit 66dca7cd4743aebb169dad3fe8b3a2affa40900e[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Tue Nov 9 14:42:43 2021 +0100
+
+    modif problème
+
+[33mcommit 82e0eaafa41a0fef8b132b58302f3dd826682443[m
+Merge: 713c66e 7457c08
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Tue Nov 9 14:39:23 2021 +0100
+
+    Merge pull request #12 from WildCodeSchool/Oeilden8-patch-1
+    
+    probleme de commentaires déplacés suite au merge. Réglé :)
+
+[33mcommit 7457c0886c12d59e4a9294315021d0ab2e5b20f6[m
+Author: Fanny <89994574+Oeilden8@users.noreply.github.com>
+Date:   Tue Nov 9 14:37:22 2021 +0100
+
+    probleme de commentaires déplacés suite au merge. Réglé :)
+
+[33mcommit 75e0d8c85b7079f9020fa3c76098314ac059848c[m
+Merge: 0551da5 5ce1f9a
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Tue Nov 9 14:35:37 2021 +0100
+
+    Réglage bug doublon
+
+[33mcommit 0f2a415b5a86dfb1c66e21d5d1cdc6c3d16828b4[m
+Author: Fanny <oeilden8@gmail.com>
+Date:   Tue Nov 9 14:34:56 2021 +0100
+
+    modify some comments who moved because of the merge
+
+[33mcommit 713c66e9fbb2bfb8b6fa9fba07954ff3fdfaff76[m
+Merge: 5ce1f9a ee0a698
+Author: Fanny <89994574+Oeilden8@users.noreply.github.com>
+Date:   Tue Nov 9 14:31:15 2021 +0100
+
+    Merge pull request #10 from WildCodeSchool/formulaireCocktails
+    
+    Ajout de la fonctionnalité d'ajout de cocktail dans un tableaux
+
+[33mcommit 5ce1f9aa1c69df922d7e17a747ba399f2aa82e16[m
+Merge: 067ed5c d930ac8
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Tue Nov 9 14:29:03 2021 +0100
+
+    Merge pull request #11 from WildCodeSchool/SearchResults
+    
+    SearchResults is finished
+
+[33mcommit d930ac8859662c9412627b3f46689d2f4ee43a83[m
+Merge: 477c245 067ed5c
+Author: Fanny <89994574+Oeilden8@users.noreply.github.com>
+Date:   Tue Nov 9 14:27:52 2021 +0100
+
+    Merge branch 'dev' into SearchResults
+
+[33mcommit 477c245fd2ebe92fe2acf7a07885fd788fc2ddad[m
+Author: Fanny <oeilden8@gmail.com>
+Date:   Tue Nov 9 14:22:16 2021 +0100
+
+    finished SearchResults, button works
+
+[33mcommit ee0a6983b1da0545fb66ec70093fdeacdff94631[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Tue Nov 9 14:17:21 2021 +0100
+
+    Ajout de la fonctionnalité d'ajout de cocktail dans un tableaux
+
+[33mcommit 0551da5ee906379633734f5523ad2e6bb581d363[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Fri Nov 5 16:50:47 2021 +0100
+
+    modif bug
+
+[33mcommit 067ed5c022af06e93a4ca5ed40d1f8f855c8d572[m
+Merge: 1e23037 27781f5
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Fri Nov 5 16:29:51 2021 +0100
+
+    Merge pull request #9 from WildCodeSchool/formulaireContact
+    
+    Formulaire contact
+
+[33mcommit 27781f541b41c1f2fb680130467b9513aac962ea[m
+Merge: dd0ab18 1e23037
+Author: Fanny <89994574+Oeilden8@users.noreply.github.com>
+Date:   Fri Nov 5 16:28:31 2021 +0100
+
+    Merge branch 'dev' into formulaireContact
+
+[33mcommit b111b6e38e2698e1cdbdbefa6ed3a400146ac4c4[m
+Author: Fanny <fanny.lagadec.pro@gmail.com>
+Date:   Fri Nov 5 16:25:55 2021 +0100
+
+    random result aren't repeating and it's working even if there is few results
+
+[33mcommit 71bc803f37f0525c3bd0e5d9c1e5aff4318b2cec[m
+Author: Fanny <fanny.lagadec.pro@gmail.com>
+Date:   Fri Nov 5 15:54:57 2021 +0100
+
+    finished random search results. need to code the button and fix repeat in random
+
+[33mcommit dd0ab18a3afae70d53ab7478c60e6980894cb3cb[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Fri Nov 5 15:10:54 2021 +0100
+
+    Responsive du Formulaire de contact & mise en place d'un hr
+
+[33mcommit 1ae0a8bfa52b0a4fcbcbfded76ca595ddbb1fc67[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Fri Nov 5 14:53:49 2021 +0100
+
+    Ajout du formulaire de contact & stylisation
+
+[33mcommit 380d4bcf72d33e9104220ca166c2073a3d448b31[m
+Author: [LL] Benjamin CORDREAUX <cordreaux.benjamin@gmail.com>
+Date:   Fri Nov 5 14:35:48 2021 +0100
+
+    Animation BurgerMenu
+
+[33mcommit b13a7b4cfc4527ec3a852701c1e2277e759764a7[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Fri Nov 5 11:05:38 2021 +0100
+
+    Ajout de la fonctionnalité impression dans la console
+
+[33mcommit 09c955050a79745aa550d232f2676b42d36d8b7f[m
+Author: Fanny <fanny.lagadec.pro@gmail.com>
+Date:   Wed Nov 3 17:35:05 2021 +0100
+
+    searchrsult and randomcocktail display at the right time, api is correctly called. Need to filter results and do css to display it
+
+[33mcommit 1e23037d4b2d7f998dcf42f002414e6589ff04e8[m
+Merge: 13fb864 a954744
+Author: [LL] Benjamin CORDREAUX <80336250+Benjicor@users.noreply.github.com>
+Date:   Wed Nov 3 17:23:20 2021 +0100
+
+    Merge pull request #5 from WildCodeSchool/RandomCocktail
+    
+    finished mobile version
+
+[33mcommit 49e71a24b464126d092e940d4cf2b235ca5f4293[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Wed Nov 3 17:20:58 2021 +0100
+
+    Commentaire Ajouté
+
+[33mcommit 62d95d66d4d481e8190a535f0cebaec4c2488b12[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Wed Nov 3 17:18:54 2021 +0100
+
+    Formulaire styliser
+
+[33mcommit b5b98cc0c4ab1f55e91b0979339387368aa6993d[m
+Merge: 2e868b4 7ef45c8
+Author: [LL] Benjamin CORDREAUX <cordreaux.benjamin@gmail.com>
+Date:   Wed Nov 3 17:15:48 2021 +0100
+
+    Css menu burger
+
+[33mcommit e16991d8551d8ea4c2cd59b6def1ae5a1c933d14[m
+Author: Fanny <fanny.lagadec.pro@gmail.com>
+Date:   Wed Nov 3 15:13:11 2021 +0100
+
+    created component displaying search results
+
+[33mcommit a954744d115ce2701a030e310edeac112e768cfe[m
+Author: Fanny <fanny.lagadec.pro@gmail.com>
+Date:   Fri Oct 29 15:47:04 2021 +0200
+
+    finished mobile version
+
+[33mcommit 13fb8649d8ed9f1dc7ff36e22375dd79ac6cdf27[m
+Merge: 7ef45c8 fe086dd
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Fri Oct 29 11:30:51 2021 +0200
+
+    Merge pull request #4 from WildCodeSchool/RandomCocktail
+    
+    Random cocktail
+
+[33mcommit 1c3c4ff863dfd5665386d66ff43e4a1948be4ce7[m
+Author: FlorianMauduit <flomauduit@orange.fr>
+Date:   Fri Oct 29 11:28:18 2021 +0200
+
+    Création du formulaire de cocktails
+
+[33mcommit 2e868b4dbc654dba818605f1a9698396c09ccd95[m
+Author: [LL] Benjamin CORDREAUX <cordreaux.benjamin@gmail.com>
+Date:   Fri Oct 29 11:21:22 2021 +0200
+
+    Initialisation Burger Menu
+
+[33mcommit fe086dd2fef7e850d80d4a1beb3934716b256459[m
+Merge: ff78579 7ef45c8
+Author: Fanny <89994574+Oeilden8@users.noreply.github.com>
+Date:   Fri Oct 29 11:17:27 2021 +0200
+
+    Merge branch 'dev' into RandomCocktail
+
+[33mcommit 7ef45c8bb62b6e59f82744e3acee4c3ae5123be0[m
+Merge: e366444 18f2e03
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Fri Oct 29 10:44:29 2021 +0200
+
+    Merge pull request #3 from WildCodeSchool/Homesearch
+    
+    Homesearch
+
+[33mcommit ff7857974ae173c121eb1756e52fa44e9f36b9a1[m
+Author: Fanny <fanny.lagadec.pro@gmail.com>
+Date:   Fri Oct 29 10:43:08 2021 +0200
+
+    resolved API problem, it works!
+
+[33mcommit d95611ecd80e650817cd322e9b2db05137312680[m
+Author: Fanny <fanny.lagadec.pro@gmail.com>
+Date:   Thu Oct 28 18:54:19 2021 +0200
+
+    finished css for the random card and tried implanting API, not working >.<
+
+[33mcommit 18f2e036a4a9aa15dbec9c9d29b88a27e129aff3[m
+Author: Fanny <fanny.lagadec.pro@gmail.com>
+Date:   Thu Oct 28 11:37:10 2021 +0200
+
+    finished homesearch component
+
+[33mcommit 91e12d0854b73fb7bce9b6dbf6f3f555054458c5[m
+Author: Fanny <fanny.lagadec.pro@gmail.com>
+Date:   Wed Oct 27 12:11:27 2021 +0200
+
+    created the branch and component for searching, added react router and some future route in comment
+
+[33mcommit e366444707bc9bbf3d92d32ab109007380e1d713[m
+Merge: 0718418 c13180d
+Author: Florian-Mauduit <flomauduit@orange.fr>
+Date:   Tue Oct 26 17:28:48 2021 +0200
+
+    Merge pull request #1 from WildCodeSchool/generalCSS
+    
+    General css
+
+[33mcommit c13180ddb59475d0b9378d987dd5e4d5e9ab308c[m
+Author: Fanny <fanny.lagadec.pro@gmail.com>
+Date:   Tue Oct 26 17:19:36 2021 +0200
+
+    added assets
+
+[33mcommit 98ce6ef07c24fce7ccbadda6eea3126ae0421cf9[m[33m ([m[1;31morigin/generalCSS[m[33m)[m
+Author: Fanny <fanny.lagadec.pro@gmail.com>
+Date:   Thu Oct 21 17:26:59 2021 +0200
+
+    added basic css for index and assets directory
+
+[33mcommit 07184189af37f3280aaff929cef5fc99898c872f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Xavier Georget <xageorget@gmail.com>
+Date:   Tue Oct 19 11:18:30 2021 +0200
+
+    change master to main in lint.yml
+
+[33mcommit 3d27f53d99509ff02faa56a0e586134c932b52af[m
+Author: yavuzkutuk <yavuz@kutuk.fr>
+Date:   Mon Oct 18 13:24:02 2021 +0200
+
+    Template React Front End
+
+[33mcommit e1fbdd303997d078af396d42cac8e61d0110b8fa[m
+Author: yavuzkutuk <yavuz@kutuk.fr>
+Date:   Mon Oct 18 13:23:05 2021 +0200
+
+    Template React Front End
