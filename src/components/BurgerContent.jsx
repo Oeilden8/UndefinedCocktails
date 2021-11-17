@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './BurgerContent.css';
 
 function BurgerContent() {
@@ -15,7 +16,9 @@ function BurgerContent() {
             Cocktails
           </a>
         </li>
-        <li>Trouver un Bar</li>
+        <li>
+          <Link to="/mapbar">Trouver un Bar</Link>
+        </li>
         <li>
           <a className="section" href="#sectionCréation">
             Création
