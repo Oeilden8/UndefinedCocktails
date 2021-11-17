@@ -12,7 +12,6 @@ import MapBar from './components/MapBar';
 import Footer from './components/Footer';
 import SearchResults from './components/Search/SearchResults';
 
-
 function App() {
   const [searchValue, setSearchValue] = React.useState('');
   // state de la barre de recherche de l'enfant HomeSearch
@@ -42,26 +41,28 @@ function App() {
         <Route
           path="/"
           element={
-            <>
+            <div>
               <BurgerMenu />
-      <HomeSearch
-        handleValue={handleValue}
-        searchValue={searchValue}
-        handleEnter={handleEnter}
-        showSuggestions={showSuggestions}
-        setShowSuggestions={setShowSuggestions}
-      />
-      {searchValue && enter ? (
-        <SearchResults searchValue={searchValue} />
-      ) : (
-        <RandomCocktail />
-        // si searchValue est true (elle existe) et enter est true mount SearchResulst
-        // else mount RandomCocktail
-      )}
-      <FormulaireCreationCocktails />
-      <FormulaireContact />
-      <Footer />
-        </>
+              <HomeSearch
+                handleValue={handleValue}
+                searchValue={searchValue}
+                handleEnter={handleEnter}
+                showSuggestions={showSuggestions}
+                setShowSuggestions={setShowSuggestions}
+              />
+              {searchValue && enter ? (
+                <SearchResults searchValue={searchValue} />
+              ) : (
+                <RandomCocktail />
+                // si searchValue est true (elle existe) et enter est true mount SearchResulst
+                // else mount RandomCocktail
+              )}
+              <FormulaireCreationCocktails />
+              <FormulaireContact />
+              <Footer />
+            </div>
+          }
+        />
         <Route
           path="/mapbar"
           element={
@@ -72,7 +73,6 @@ function App() {
           }
         />
       </Routes>
-
     </div>
   );
 }
