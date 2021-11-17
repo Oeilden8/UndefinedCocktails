@@ -17,7 +17,9 @@ function BurgerContent() {
           </a>
         </li>
         <li>
-          <Link to="/mapbar">Trouver un Bar</Link>
+          <Link className="link" to="/mapbar">
+            Trouver un Bar
+          </Link>
         </li>
         <li>
           <a className="section" href="#sectionCréation">
