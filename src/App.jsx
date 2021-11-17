@@ -12,6 +12,7 @@ import RandomCocktail from './components/RandomCocktail';
 import MapBar from './components/MapBar';
 import Footer from './components/Footer';
 import SearchResults from './components/Search/SearchResults';
+import ArrowButton from './components/ArrowButton';
 
 function App() {
   const [searchValue, setSearchValue] = React.useState('');
@@ -44,6 +45,7 @@ function App() {
           element={
             <div>
               <BurgerMenu />
+              <ArrowButton />
               <HomeSearch
                 handleValue={handleValue}
                 searchValue={searchValue}

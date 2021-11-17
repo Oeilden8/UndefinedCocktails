@@ -62,7 +62,7 @@ export default function HomeSearch(props) {
         type="text"
         className="search-bar"
         value={searchValue}
-        placeholder="  &#x1F50E;   Search by name, ingrédient..."
+        placeholder="  &#x1F50E;   Search by ingredient"
         onChange={handleValue}
         onKeyUp={handleEnter}
         onKeyDown={handleSuggestion}

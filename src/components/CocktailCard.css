@@ -13,6 +13,10 @@
   padding-top: 30px;
 }
 
+#card:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 568px) {
   #card {
     height: 700px;
