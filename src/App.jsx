@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import FormulaireContact from './components/FormulaireContact';
 import FormulaireCreationCocktails from './components/FormulaireCreationCocktails';
 import BurgerMenu from './components/BurgerMenu';
+import BurgerMenu2 from './components/BurgerMenu2';
 import HomeSearch from './components/HomeSearch';
 import RandomCocktail from './components/RandomCocktail';
 import MapBar from './components/MapBar';
@@ -67,8 +68,8 @@ function App() {
           path="/mapbar"
           element={
             <>
+              <BurgerMenu2 />
               <MapBar />
-              <BurgerMenu />
             </>
           }
         />
