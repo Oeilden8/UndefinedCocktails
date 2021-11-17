@@ -26,7 +26,7 @@ footer {
   cursor: pointer;
   width: 35px;
   height: 40px;
-  margin: 0 5px 5px 0;
+  margin: 0 50px 5px 0;
 }
 
 @media only screen and (max-width: 770px) {
