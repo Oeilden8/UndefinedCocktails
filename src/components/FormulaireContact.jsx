@@ -21,7 +21,6 @@ function formulaireContact() {
   };
   return (
     <div className="formulaireContact" id="sectionContact">
-      <hr />
       <form>
         <h1>Would you like to contact us?</h1>
         <p className="textContact">Would you like to contact us? </p>
@@ -68,11 +67,11 @@ function formulaireContact() {
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Hello, I am contacting you because there is a bug on a part of your site."
           />
+          {/* Button Envoyé */}
+          <button type="submit" onClick={display} className="submitCocktails">
+            Send
+          </button>
         </label>
-        {/* Button Envoyé */}
-        <button type="submit" onClick={display} className="submitCocktails">
-          Send
-        </button>
       </form>
     </div>
   );

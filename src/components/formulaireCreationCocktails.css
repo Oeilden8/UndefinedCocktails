@@ -4,20 +4,19 @@ hr {
   border-color: transparent;
 }
 
-h1 {
-  font-family: 'Kalam', cursive;
-  font-size: 20pt;
-}
-
 h3 {
   text-align: left;
 }
 
 /* ---------- Le formulaire ---------- */
 
+.formulaire {
+  display: flex;
+  justify-content: center;
+}
+
 form {
   display: flex;
-  margin-left: 20%;
   flex-direction: column;
   height: 960px;
   width: 730px;
@@ -29,7 +28,7 @@ input {
   height: 30px;
   border-radius: 7px;
   font-size: 18px;
-  border-color: orange;
+  border-color: #e93e3a;
   font-family: 'Economica', Arial, Helvetica, sans-serif;
   align-items: stretch;
 }
@@ -46,7 +45,7 @@ input {
   vertical-align: top;
   height: 200px;
   width: 100%;
-  border-color: orange;
+  border-color: #e93e3a;
   border-radius: 7px;
   font-size: 18px;
   font-family: 'Economica', Arial, Helvetica, sans-serif;
@@ -56,32 +55,36 @@ input {
 
 .submitCocktails {
   margin: 10px;
-  margin-left: 40%;
   border-radius: 1em;
   width: 100px;
-  background-color: orangered;
+  background-color: #e93e3a;
   border: none;
   color: white;
-  font-weight: 600;
   font-family: 'Economica', Arial, Helvetica, sans-serif;
   font-size: 16px;
   cursor: pointer;
 }
 
-.submitCocktails:hover {
-  background-color: #f0743f;
-}
-
 /* ---------- Partie Responsive du Formulaire ---------- */
 
 @media only screen and (max-width: 770px) {
-  form {
-    width: 280px;
-    height: 600px;
-    margin-left: 15%;
+  h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
   }
 
-  .submitCocktails {
-    margin-left: 30%;
+  form {
+    width: 280px;
+    height: 545px;
+  }
+
+  input {
+    font-size: 15px;
+    height: 20px;
+  }
+
+  #preparation {
+    height: 90px;
+    font-size: 15px;
   }
 }

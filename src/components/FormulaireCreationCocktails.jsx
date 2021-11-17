@@ -76,11 +76,11 @@ function FormulaireCreationCocktails() {
             onChange={(e) => setPreparation(e.target.value)}
             placeholder="The preparation of cocktails"
           />
+          {/* Button Envoyé */}
+          <button type="submit" onClick={display} className="submitCocktails">
+            suggest
+          </button>
         </label>
-        {/* Button Envoyé */}
-        <button type="submit" onClick={display} className="submitCocktails">
-          suggest
-        </button>
         {/* Partie qui affiche les cocktails du formulaire */}
         {/* <p>Mes cocktails Personnalisé</p>
         <div id="cocktailTabs">
