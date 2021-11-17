@@ -2,13 +2,16 @@
 // import ReactDOM from 'react-dom';
 import React from 'react';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import FormulaireContact from './components/FormulaireContact';
 import FormulaireCreationCocktails from './components/FormulaireCreationCocktails';
 import BurgerMenu from './components/BurgerMenu';
 import HomeSearch from './components/HomeSearch';
 import RandomCocktail from './components/RandomCocktail';
+import MapBar from './components/MapBar';
 import Footer from './components/Footer';
 import SearchResults from './components/Search/SearchResults';
+
 
 function App() {
   const [searchValue, setSearchValue] = React.useState('');
@@ -35,7 +38,12 @@ function App() {
 
   return (
     <div className="App">
-      <BurgerMenu />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <BurgerMenu />
       <HomeSearch
         handleValue={handleValue}
         searchValue={searchValue}
@@ -53,6 +61,18 @@ function App() {
       <FormulaireCreationCocktails />
       <FormulaireContact />
       <Footer />
+        </>
+        <Route
+          path="/mapbar"
+          element={
+            <>
+              <MapBar />
+              <BurgerMenu />
+            </>
+          }
+        />
+      </Routes>
+
     </div>
   );
 }
