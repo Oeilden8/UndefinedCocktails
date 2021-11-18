@@ -23,7 +23,6 @@ function formulaireContact() {
     <div className="formulaireContact" id="sectionContact">
       <form>
         <h1>Would you like to contact us?</h1>
-        <p className="textContact">Would you like to contact us? </p>
         {/* Input pour le Nom du Cocktail */}
         <h3>Your Name :</h3>
         <label htmlFor="contact">
