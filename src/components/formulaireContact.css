@@ -1,0 +1,38 @@
+/* ------ Css du Formulaire de Contact ------ */
+
+.formulaireContact {
+  display: flex;
+  justify-content: center;
+}
+
+#name {
+  width: 100%;
+}
+
+#email {
+  width: 100%;
+}
+
+#objet {
+  width: 100%;
+}
+
+#message {
+  width: 100%;
+  height: 200px;
+  border-color: #e93e3a;
+  border-radius: 7px;
+  font-size: 18px;
+  font-family: 'Economica', Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 770px) {
+  .textContact {
+    margin-bottom: 0;
+  }
+
+  #message {
+    font-size: 15px;
+    height: 90px;
+  }
+}

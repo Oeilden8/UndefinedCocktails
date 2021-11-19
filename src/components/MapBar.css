@@ -1,0 +1,33 @@
+.map-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  align-items: center;
+}
+
+.map-search {
+  width: 25%;
+  margin-bottom: 25px;
+  font-family: 'Economica', sans-serif;
+  font-size: 16pt;
+  border-radius: 10px;
+  border-color: #e93e3a;
+  color: #332a2b;
+}
+
+.map {
+  width: 600px;
+  height: 450px;
+}
+
+@media screen and (max-width: 568px) {
+  .map {
+    width: 320px;
+    height: 450px;
+  }
+
+  .map-search {
+    width: 50%;
+  }
+}

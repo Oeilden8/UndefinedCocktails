@@ -1,0 +1,86 @@
+/* ---------- Css du formulaire de creation du cocktails ---------- */
+
+h3 {
+  text-align: left;
+}
+
+/* ---------- Le formulaire ---------- */
+
+.formulaire {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 960px;
+  width: 730px;
+}
+
+/* ---------- Partie Input ---------- */
+
+input {
+  height: 30px;
+  border-radius: 7px;
+  font-size: 18px;
+  border-color: #e93e3a;
+  font-family: 'Economica', Arial, Helvetica, sans-serif;
+  align-items: stretch;
+}
+
+#name {
+  width: 100%;
+}
+
+#ingredient {
+  width: 100%;
+}
+
+#preparation {
+  vertical-align: top;
+  height: 200px;
+  width: 100%;
+  border-color: #e93e3a;
+  border-radius: 7px;
+  font-size: 18px;
+  font-family: 'Economica', Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Partie button Submit ---------- */
+
+.submitCocktails {
+  margin: 10px;
+  border-radius: 1em;
+  width: 100px;
+  background-color: #e93e3a;
+  border: none;
+  color: white;
+  font-family: 'Economica', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ---------- Partie Responsive du Formulaire ---------- */
+
+@media only screen and (max-width: 770px) {
+  h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  form {
+    width: 280px;
+    height: 545px;
+  }
+
+  input {
+    font-size: 15px;
+    height: 20px;
+  }
+
+  #preparation {
+    height: 90px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,104 @@
+#accueil {
+  width: 100vw;
+  height: 700px;
+}
+
+#card {
+  width: 100vw;
+  height: 640px;
+  background-color: rgba(0, 0, 0, 0.733);
+  position: absolute;
+  z-index: 50;
+  margin-top: -20px;
+  padding-top: 30px;
+}
+
+#card:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 568px) {
+  #card {
+    height: 700px;
+    padding-top: 150px;
+    margin-top: -5px;
+  }
+}
+
+.cocktail-cart {
+  width: 400px;
+  height: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #3c4044;
+  border-radius: 15px;
+  border: solid 3px;
+  border-color: #e93e3a;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  padding: 30px;
+}
+
+.cocktail-image {
+  width: 180px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.ingredients {
+  list-style: none;
+  display: block;
+  width: 180px;
+  height: 250px;
+  margin: 0;
+}
+
+.ingredients li {
+  padding-bottom: 15px;
+  font-size: 16pt;
+}
+
+h2 {
+  font-size: 18pt;
+  margin: 0;
+  padding-bottom: 5px;
+  display: block;
+  width: 180px;
+}
+
+.recipe {
+  margin: 0;
+  font-size: 13pt;
+}
+
+@media screen and (max-width: 700px) {
+  .cocktail-cart {
+    width: 260px;
+    height: 400px;
+  }
+
+  .cocktail-image {
+    width: 110px;
+    height: 180px;
+  }
+
+  .ingredients {
+    width: 110px;
+    height: 180px;
+  }
+
+  .ingredients li {
+    font-size: 12pt;
+  }
+
+  h2 {
+    font-size: 15pt;
+    width: 110px;
+  }
+
+  .recipe {
+    font-size: 12pt;
+  }
+}

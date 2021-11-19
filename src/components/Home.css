@@ -1,0 +1,71 @@
+.search {
+  width: 100vw;
+  height: 185px;
+  background-image: url(../assets/cocktail-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 1800px;
+  display: flex;
+  background-position: top center;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 70vw;
+  height: 40px;
+  font-family: 'Economica', sans-serif;
+  font-size: 16pt;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: transparent;
+  color: #2a2e33;
+}
+
+.suggestion {
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.438);
+  z-index: 90;
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 110px;
+  width: 67vw;
+  border-radius: 10px;
+}
+
+.suggestion li {
+  font-size: 14pt;
+  color: #2a2e33;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .search {
+    height: 80px;
+    background-size: 700px;
+  }
+
+  .search-bar {
+    width: 60vw;
+    min-width: 280px;
+    height: 25px;
+    font-size: 13pt;
+  }
+
+  .suggestion {
+    width: 55vw;
+    min-width: 250px;
+    margin-top: 50px;
+  }
+
+  .suggestion li {
+    font-size: 11pt;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .search {
+    background-size: 2600px;
+  }
+}
