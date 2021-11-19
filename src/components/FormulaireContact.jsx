@@ -24,47 +24,47 @@ function formulaireContact() {
       <form>
         <h1>Would you like to contact us?</h1>
         {/* Input pour le Nom du Cocktail */}
-        <h3>Your Name :</h3>
+        <h3>Your Name</h3>
         <label htmlFor="contact">
           <input
             type="text"
             id="name"
             value={firstName}
             onChange={(e) => setfirstName(e.target.value)}
-            placeholder="Caméo"
+            placeholder="Wilder"
           />
         </label>
         {/* Input Email */}
-        <h3>Your Email :</h3>
+        <h3>Your Email</h3>
         <label htmlFor="contact">
           <input
             type="text"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="cameo@email.com"
+            placeholder="wilder@email.com"
           />
         </label>
         {/* Input des Ingrédients */}
-        <h3>Objet :</h3>
+        <h3>Objet</h3>
         <label htmlFor="contact">
           <input
             type="text"
             id="objet"
             value={objet}
             onChange={(e) => setObjet(e.target.value)}
-            placeholder="I contact you following a bug on your website"
+            placeholder="I love your website"
           />
         </label>
         {/* Input Instruction de Préparation */}
-        <h3>Message :</h3>
+        <h3>Message</h3>
         <label htmlFor="contact">
           <textarea
             type="message"
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Hello, I am contacting you because there is a bug on a part of your site."
+            placeholder="Hello Wild!"
           />
           {/* Button Envoyé */}
           <button type="submit" onClick={display} className="submitCocktails">

@@ -42,42 +42,42 @@ function FormulaireCreationCocktails() {
   return (
     <div className="formulaire" id="sectionCréation">
       <form>
-        <h1>What about offering your own cocktail?</h1>
+        <h1>What about creating your own cocktail?</h1>
         {/* Input pour le Nom du Cocktail */}
-        <h3>Name of the Cocktail :</h3>
+        <h3>Cocktail name</h3>
         <label htmlFor="nameofthecocktail">
           <input
             type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Name of the cocktail"
+            placeholder="Tequila Sunwild"
           />
         </label>
         {/* Input des Ingrédients */}
-        <h3>Ingredient :</h3>
+        <h3>Ingredients</h3>
         <label htmlFor="nameofthecocktail">
           <input
             type="text"
             id="ingredient"
             value={ingredient}
             onChange={(e) => setIngredient(e.target.value)}
-            placeholder="Ingredient"
+            placeholder="Tequila"
           />
         </label>
         {/* Input Instruction de Préparation */}
-        <h3>Preparation :</h3>
+        <h3>Preparation</h3>
         <label htmlFor="nameofthecocktail">
           <textarea
             type="message"
             id="preparation"
             value={preparation}
             onChange={(e) => setPreparation(e.target.value)}
-            placeholder="The preparation of cocktails"
+            placeholder="Mix it!"
           />
           {/* Button Envoyé */}
           <button type="submit" onClick={display} className="submitCocktails">
-            suggest
+            Suggest
           </button>
         </label>
         {/* Partie qui affiche les cocktails du formulaire */}

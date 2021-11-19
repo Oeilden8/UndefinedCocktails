@@ -23,7 +23,7 @@ function BurgerContent() {
         </li>
         <li>
           <a className="section" href="#sectionCréation">
-            Création
+            Creation
           </a>
         </li>
         <li>

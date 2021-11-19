@@ -9,7 +9,7 @@ function MapBar() {
   const urlSearch = `https://www.google.com/maps/embed/v1/search?key=AIzaSyAI78nOfLNuKORIctvLjdEQhd17OZvMkN8&q=bar+cocktail+near+${mapBar}`;
   return (
     <div className="map-bar">
-      <h1>Are you looking for a Bar !</h1>
+      <h1>Are you looking for a Bar?</h1>
       <input
         className="map-search"
         type="text"
