@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/UndefinedCocktails/static/css/main.13322f5e.chunk.css",
-    "main.js": "/UndefinedCocktails/static/js/main.8bd8be7e.chunk.js",
-    "main.js.map": "/UndefinedCocktails/static/js/main.8bd8be7e.chunk.js.map",
-    "runtime-main.js": "/UndefinedCocktails/static/js/runtime-main.292d9d0d.js",
-    "runtime-main.js.map": "/UndefinedCocktails/static/js/runtime-main.292d9d0d.js.map",
-    "static/js/2.2c24e65f.chunk.js": "/UndefinedCocktails/static/js/2.2c24e65f.chunk.js",
-    "static/js/2.2c24e65f.chunk.js.map": "/UndefinedCocktails/static/js/2.2c24e65f.chunk.js.map",
-    "static/js/3.5c53e780.chunk.js": "/UndefinedCocktails/static/js/3.5c53e780.chunk.js",
-    "static/js/3.5c53e780.chunk.js.map": "/UndefinedCocktails/static/js/3.5c53e780.chunk.js.map",
-    "index.html": "/UndefinedCocktails/index.html",
-    "static/css/main.13322f5e.chunk.css.map": "/UndefinedCocktails/static/css/main.13322f5e.chunk.css.map",
-    "static/js/2.2c24e65f.chunk.js.LICENSE.txt": "/UndefinedCocktails/static/js/2.2c24e65f.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/UndefinedCocktails/static/media/Kalam-Bold.d81b8c41.ttf",
-    "static/media/Home.css": "/UndefinedCocktails/static/media/cocktail-desktop.85905034.jpg"
+    "main.css": "/static/css/main.4cef5c88.chunk.css",
+    "main.js": "/static/js/main.0aaff194.chunk.js",
+    "main.js.map": "/static/js/main.0aaff194.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b630c957.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b630c957.js.map",
+    "static/js/2.9d7f316f.chunk.js": "/static/js/2.9d7f316f.chunk.js",
+    "static/js/2.9d7f316f.chunk.js.map": "/static/js/2.9d7f316f.chunk.js.map",
+    "static/js/3.5c53e780.chunk.js": "/static/js/3.5c53e780.chunk.js",
+    "static/js/3.5c53e780.chunk.js.map": "/static/js/3.5c53e780.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.4cef5c88.chunk.css.map": "/static/css/main.4cef5c88.chunk.css.map",
+    "static/js/2.9d7f316f.chunk.js.LICENSE.txt": "/static/js/2.9d7f316f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Kalam-Bold.d81b8c41.ttf",
+    "static/media/Home.css": "/static/media/cocktail-desktop.85905034.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.292d9d0d.js",
-    "static/js/2.2c24e65f.chunk.js",
-    "static/css/main.13322f5e.chunk.css",
-    "static/js/main.8bd8be7e.chunk.js"
+    "static/js/runtime-main.b630c957.js",
+    "static/js/2.9d7f316f.chunk.js",
+    "static/css/main.4cef5c88.chunk.css",
+    "static/js/main.0aaff194.chunk.js"
   ]
 }
