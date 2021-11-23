@@ -7,7 +7,7 @@ function BurgerContent() {
     <div>
       <ul className="nav">
         <li>
-          <a className="section" a href="#sectionHome">
+          <a className="section" Link to="homepage#sectionHome">
             Home
           </a>
         </li>
@@ -22,12 +22,12 @@ function BurgerContent() {
           </Link>
         </li>
         <li>
-          <a className="section" a href="#sectionCréation">
+          <a className="section" Link to="homepage#sectionCréation">
             Creation
           </a>
         </li>
         <li>
-          <a className="section" a href="#sectionContact">
+          <a className="section" Link to="homepage#sectionContact">
             Contact
           </a>
         </li>
