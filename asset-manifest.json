@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/UndefinedCocktails/static/css/main.13322f5e.chunk.css",
-    "main.js": "/UndefinedCocktails/static/js/main.96b37d2e.chunk.js",
-    "main.js.map": "/UndefinedCocktails/static/js/main.96b37d2e.chunk.js.map",
-    "runtime-main.js": "/UndefinedCocktails/static/js/runtime-main.292d9d0d.js",
-    "runtime-main.js.map": "/UndefinedCocktails/static/js/runtime-main.292d9d0d.js.map",
-    "static/js/2.de7d74d0.chunk.js": "/UndefinedCocktails/static/js/2.de7d74d0.chunk.js",
-    "static/js/2.de7d74d0.chunk.js.map": "/UndefinedCocktails/static/js/2.de7d74d0.chunk.js.map",
-    "static/js/3.5c53e780.chunk.js": "/UndefinedCocktails/static/js/3.5c53e780.chunk.js",
-    "static/js/3.5c53e780.chunk.js.map": "/UndefinedCocktails/static/js/3.5c53e780.chunk.js.map",
+    "main.js": "/UndefinedCocktails/static/js/main.f40aa523.chunk.js",
+    "main.js.map": "/UndefinedCocktails/static/js/main.f40aa523.chunk.js.map",
+    "runtime-main.js": "/UndefinedCocktails/static/js/runtime-main.fe7e6974.js",
+    "runtime-main.js.map": "/UndefinedCocktails/static/js/runtime-main.fe7e6974.js.map",
+    "static/js/2.e86ce13b.chunk.js": "/UndefinedCocktails/static/js/2.e86ce13b.chunk.js",
+    "static/js/2.e86ce13b.chunk.js.map": "/UndefinedCocktails/static/js/2.e86ce13b.chunk.js.map",
+    "static/js/3.f0b3c03f.chunk.js": "/UndefinedCocktails/static/js/3.f0b3c03f.chunk.js",
+    "static/js/3.f0b3c03f.chunk.js.map": "/UndefinedCocktails/static/js/3.f0b3c03f.chunk.js.map",
     "index.html": "/UndefinedCocktails/index.html",
     "static/css/main.13322f5e.chunk.css.map": "/UndefinedCocktails/static/css/main.13322f5e.chunk.css.map",
-    "static/js/2.de7d74d0.chunk.js.LICENSE.txt": "/UndefinedCocktails/static/js/2.de7d74d0.chunk.js.LICENSE.txt",
+    "static/js/2.e86ce13b.chunk.js.LICENSE.txt": "/UndefinedCocktails/static/js/2.e86ce13b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/UndefinedCocktails/static/media/Kalam-Bold.d81b8c41.ttf",
     "static/media/Home.css": "/UndefinedCocktails/static/media/cocktail-desktop.85905034.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.292d9d0d.js",
-    "static/js/2.de7d74d0.chunk.js",
+    "static/js/runtime-main.fe7e6974.js",
+    "static/js/2.e86ce13b.chunk.js",
     "static/css/main.13322f5e.chunk.css",
-    "static/js/main.96b37d2e.chunk.js"
+    "static/js/main.f40aa523.chunk.js"
   ]
 }
