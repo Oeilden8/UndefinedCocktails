@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './BurgerContent.css';
 
 function BurgerContent() {
@@ -7,14 +8,14 @@ function BurgerContent() {
     <div>
       <ul className="nav">
         <li>
-          <a className="section" Link to="homepage#sectionHome">
+          <HashLink className="section" smooth to="#sectionHome">
             Home
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a className="section" a href="#accueil">
+          <HashLink className="section" smooth to="#accueil">
             Cocktails
-          </a>
+          </HashLink>
         </li>
         <li>
           <Link className="link" to="/mapbar">
@@ -22,14 +23,14 @@ function BurgerContent() {
           </Link>
         </li>
         <li>
-          <a className="section" Link to="homepage#sectionCréation">
+          <HashLink className="section" smooth to="#sectionCréation">
             Creation
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a className="section" Link to="homepage#sectionContact">
+          <HashLink className="section" smooth to="#sectionContact">
             Contact
-          </a>
+          </HashLink>
         </li>
       </ul>
     </div>
